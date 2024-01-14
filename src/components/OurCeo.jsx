@@ -1,5 +1,5 @@
 import React from "react";
-import { Character, McCEO, McCEOsm, roundCeo } from "../assets";
+import { roundCeo } from "../assets";
 import { motion } from "framer-motion";
 import { staggerContainer } from "../utils/motion";
 import { TypingText } from "./CustomTexts";
@@ -19,13 +19,8 @@ const OurCeo = () => {
           Micheal Mureni
         </div>
       </motion.div>
-      {/* <img
-        src={McCEO}
-        alt="customer"
-        className="rounded-full  object-cover  w-[250px] h-[250px] mt-[10px] "
-      /> */}
+
       <div className=" w-[250px] h-[250px]  rounded-full ">
-        {/* <div className="bg-bgCeo full bg-no-repeat bg-center w-[250px] h-[250px] rounded-full z-10"></div> */}
         <img
           src={roundCeo}
           alt="customer"
@@ -40,10 +35,6 @@ const OurCeo = () => {
         possibilities with us as we navigate the roads, transcend boundaries,
         and bring your ideas to fruition.
       </p>
-
-      {/* <h3 className="mt-1 font-palanquin text-3xl text-center font-bold">
-        Mureni Micheal || Founder
-      </h3> */}
     </div>
   );
 };

@@ -6,12 +6,8 @@ import {
   spidgeniusremovebg,
 } from "../assets/index";
 import HeroText from "./HeroText";
-import { motion } from "framer-motion";
-import { navVariants } from "../utils/motion";
 import PublishingHeroText from "./PublishingHeroText";
 import InterStateTravels from "./InterStateTravels";
-import { Link, NavLink } from "react-router-dom";
-import { navLinks } from "../utils/constants";
 import Navbar from "./Navbar";
 
 const Hero = () => {

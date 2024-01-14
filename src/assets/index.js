@@ -7,7 +7,7 @@ import Object from "./Object.svg";
 import spidgeniusremovebg from "./spidgeniusremovebg.png";
 import truckFast from "./truckFast.svg";
 import print2 from "./print2.svg";
-import printBlue from "./printBlue.svg";
+import printBlue from "./PrintBlue.svg";
 import Travel2 from "./Travel2.svg";
 import TravelBlue from "./TravelBlue.svg";
 import DeliveryBlue from "./DeliveryBlue.svg";

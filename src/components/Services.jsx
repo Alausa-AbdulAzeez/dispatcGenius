@@ -1,5 +1,5 @@
 import React from "react";
-import { fadeIn, staggerContainer } from "../utils/motion";
+import { staggerContainer } from "../utils/motion";
 import { TypingText } from "./CustomTexts";
 import { motion } from "framer-motion";
 import { services } from "../utils/constants";

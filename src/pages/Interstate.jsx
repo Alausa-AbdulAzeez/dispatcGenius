@@ -1,21 +1,12 @@
-import React, { useEffect, useState } from "react";
-import {
-  DeliveryBlue,
-  TravelBlue,
-  printBlue,
-  spidgeniusremovebg,
-} from "../assets/index";
-import HeroText from "../components/HeroText";
+import React from "react";
+import { TravelBlue } from "../assets/index";
 import { motion } from "framer-motion";
 import { navVariants, staggerContainer } from "../utils/motion";
-import PublishingHeroText from "../components/PublishingHeroText";
 import InterStateTravels from "../components/InterStateTravels";
-import { Link, NavLink } from "react-router-dom";
-import { navLinks } from "../utils/constants";
+import { Link } from "react-router-dom";
 import Footer from "../components/Footer";
 import { TypingText } from "../components/CustomTexts";
 import Button from "../components/Button";
-import { arrowRight } from "../assets/icons";
 import Navbar from "../components/Navbar";
 
 const Interstate = () => {

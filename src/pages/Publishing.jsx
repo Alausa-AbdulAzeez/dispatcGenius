@@ -18,7 +18,7 @@ import Button from "../components/Button";
 import { arrowRight } from "../assets/icons";
 import Navbar from "../components/Navbar";
 
-const Dispatch = () => {
+const Publishing = () => {
   return (
     <>
       <div
@@ -27,12 +27,12 @@ const Dispatch = () => {
         <Navbar />
 
         <div
-          className={`bg-primaryGreen w-full h-[100vh] absolute flex items-center `}
+          className={`bg-primaryWhine w-full h-[100vh] absolute flex items-center `}
         >
-          <HeroText />
+          <PublishingHeroText />
           <div className="flex-1 h-full flex items-center justify-center">
             <img
-              src={DeliveryBlue}
+              src={printBlue}
               // src={Object}
               alt="delivery-boy-image"
               className="object-fill h-[460px] w-[370px]"
@@ -49,7 +49,7 @@ const Dispatch = () => {
           className={` mx-auto flex flex-col items-center`}
         >
           <TypingText
-            title="| Dispatch services"
+            title="| Publishing (Graphics and General Printing):"
             textStyles="text-center text-[24px]"
           />
           <motion.div
@@ -58,12 +58,14 @@ const Dispatch = () => {
             initial="hidden"
             whileInView={"show"}
           >
-            At <span className="font-extrabold text-black">SpidGenius,</span> we
-            pride ourselves on delivering prompt and reliable dispatch services.
-            Whether it's urgent documents, packages, or specialized shipments,
-            our dedicated team ensures swift and secure delivery to your
-            doorstep. We go beyond logistics, providing a seamless experience
-            that you can trust.
+            Step into a world of creativity and precision with our publishing
+            services. From striking graphics to impeccable general printing,{" "}
+            <span className="font-extrabold text-black">SpidGenius</span>{" "}
+            transforms ideas into tangible reality. Our team of skilled
+            professionals merges innovation with expertise, delivering
+            high-quality prints that leave a lasting impression. Whether it's a
+            promotional campaign or personalized designs, we bring your vision
+            to life on paper.
           </motion.div>
           <Link to={"https://wa.me/+2348090987851"} target="_blank">
             <Button
@@ -80,4 +82,4 @@ const Dispatch = () => {
   );
 };
 
-export default Dispatch;
+export default Publishing;

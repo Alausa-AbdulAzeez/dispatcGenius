@@ -4,6 +4,8 @@ import { BrowserRouter, Route, Routes, useNavigate } from "react-router-dom";
 import "./App.css";
 import Home from "./pages/Home";
 import Dispatch from "./pages/Dispatch";
+import Publishing from "./pages/Publishing";
+import Interstate from "./pages/Interstate";
 
 function App() {
   return (
@@ -11,8 +13,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/dispatch" element={<Dispatch />} />
-        <Route path="/publishing" element={<Home />} />
-        <Route path="/travels" element={<Home />} />
+        <Route path="/publishing" element={<Publishing />} />
+        <Route path="/travels" element={<Interstate />} />
       </Routes>
     </BrowserRouter>
   );

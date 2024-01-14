@@ -27,9 +27,13 @@ const OurCeo = () => {
         alt="customer"
         className="rounded-full object-cover w-[120px] h-[120px]"
       />
-      <p className="mt-6 max-w-sm text-center info-text">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa itaque
-        aut veniam asperiores natus pariatur voluptatibus ab at modi esse.
+      <p className="mt-6 text-[20px] text-center w-[70%]">
+        Join us in redefining the landscape of dispatch, travel, and publishing.
+        At SpidGenius, we don't just meet expectations; we exceed them. Let's
+        embark on a journey together – where every dispatch, every trip, and
+        every print is a testament to our commitment to excellence. Explore the
+        possibilities with us as we navigate the roads, transcend boundaries,
+        and bring your ideas to fruition.
       </p>
 
       {/* <h3 className="mt-1 font-palanquin text-3xl text-center font-bold">

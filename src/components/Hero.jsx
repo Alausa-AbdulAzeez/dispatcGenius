@@ -12,6 +12,7 @@ import PublishingHeroText from "./PublishingHeroText";
 import InterStateTravels from "./InterStateTravels";
 import { Link, NavLink } from "react-router-dom";
 import { navLinks } from "../utils/constants";
+import Navbar from "./Navbar";
 
 const Hero = () => {
   // ACTIVE INDEX
@@ -32,42 +33,7 @@ const Hero = () => {
     <div
       className={`w-full h-full relative transition-opacity duration-[3000] ease-in-out`}
     >
-      <motion.div
-        className="absolute flex justify-between w-full pl-[40px]  top-[30px] z-[3]"
-        variants={navVariants}
-        initial="hidden"
-        whileInView={"show"}
-      >
-        <Link to={"/"}>
-          <img src={spidgeniusremovebg} alt="Logo" />
-        </Link>
-        <ul className="flex-1 flex justify-center items-center gap-16 max-lg:hidden">
-          {navLinks?.map((item, index) => {
-            return (
-              <NavLink
-                key={item?.label}
-                style={{ textDecoration: "none" }}
-                to={item.href}
-              >
-                {({ isActive }) => (
-                  <li
-                    className={`font-montserrat leading-normal text-lg text-[#d6d6d6] ${
-                      isActive ? "text-[#7ffff4]" : ""
-                    }`}
-                  >
-                    {item?.label}
-                  </li>
-                )}
-              </NavLink>
-            );
-          })}
-          <li
-            className={`font-montserrat leading-normal text-lg text-[#d6d6d6]`}
-          >
-            <a href="#contactUs">Contact us</a>
-          </li>
-        </ul>
-      </motion.div>
+      <Navbar />
       <div
         className={`bg-primaryWhine w-full h-full absolute flex items-center ${
           activeIndex === 1 ? "opacity-[1]" : "opacity-[0]"

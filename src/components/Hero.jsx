@@ -40,7 +40,7 @@ const Hero = () => {
         }`}
       >
         <PublishingHeroText />
-        <div className="flex-1 h-full flex items-center justify-center">
+        <div className="flex-1 h-full flex items-center justify-center max-sm:hidden">
           <img
             src={printBlue}
             alt="delivery-boy-image"
@@ -54,7 +54,7 @@ const Hero = () => {
         }`}
       >
         <HeroText />
-        <div className="flex-1 h-full flex items-center justify-center">
+        <div className="flex-1 h-full flex items-center justify-center max-sm:hidden">
           <img
             src={DeliveryBlue}
             // src={Object}
@@ -69,7 +69,7 @@ const Hero = () => {
         }`}
       >
         <InterStateTravels />
-        <div className="flex-1 h-full flex items-center justify-center">
+        <div className="flex-1 h-full flex items-center justify-center max-sm:hidden">
           <img
             src={TravelBlue}
             // src={Travel2}

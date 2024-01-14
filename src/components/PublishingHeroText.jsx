@@ -8,22 +8,22 @@ const PublishingHeroText = () => {
       variants={fadeIn("right", "tween", 0.2, 1)}
       initial="hidden"
       whileInView={"show"}
-      className="flex-1 h-full justify-center flex flex-col pl-[64px] text-white z-[2]"
+      className="flex-1 h-full justify-center flex flex-col pl-[64px] text-white z-[2] max-sm:px-[20px]"
     >
-      <div className="font-bold text-[40px]">Publishing</div>
-      <div className="font-bold text-[32px] underline text-[#77FFE8]">
+      <div className="font-bold text-[40px] max-md:text-[30px]">Publishing</div>
+      <div className="font-bold text-[32px] underline text-[#77FFE8]  max-md:text-[25px]">
         (Graphics and{" "}
         <span className="italic no-underline text-[#00F0FF]">
           General printing)
         </span>
       </div>
-      <div className="text-[20px]">
+      <div className="text-[20px] max-md:text-[14px] ">
         Step into a world of creativity and precision with our publishing
         services.
       </div>
       <div className="flex gap-5 mt-[30px] ">
         <Link to={"https://wa.me/+2348090987851"} target="_blank">
-          <button className="bg-white px-[20px] py-[14px] border border-transparent text-black rounded-lg  cursor-pointer hover:bg-transparent hover:text-white hover:border-white transition-all duration-[3000] ease-in-out">
+          <button className="bg-white px-[20px] py-[14px] max-md:px-[14px] max-md:py-[7px] border border-transparent text-black rounded-lg  cursor-pointer hover:bg-transparent hover:text-white hover:border-white transition-all duration-[3000] ease-in-out">
             Contact us
           </button>
         </Link>

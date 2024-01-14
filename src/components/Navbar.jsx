@@ -9,7 +9,7 @@ import { navLinks } from "../utils/constants";
 const Navbar = () => {
   return (
     <motion.div
-      className="absolute flex justify-between w-full pl-[40px]  top-[30px] z-[3]"
+      className="absolute flex justify-between w-full pl-[40px]  top-[30px] z-[3] max-sm:pl-[10px]"
       variants={navVariants}
       initial="hidden"
       whileInView={"show"}

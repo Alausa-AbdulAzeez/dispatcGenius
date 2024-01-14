@@ -17,6 +17,7 @@ export default {
       },
       backgroundImage: (theme) => ({
         "bg-0": "url('./src/assets/bgGreen2.svg')",
+        bgCeo: "url('./src/assets/McCEOsm.png')",
         "bg-1": "url('/path/to/your/image-1.jpg')",
         "bg-2": "url('/path/to/your/image-2.jpg')",
         "bg-3": "url('/path/to/your/image-3.jpg')",

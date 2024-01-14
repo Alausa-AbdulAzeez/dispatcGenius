@@ -30,7 +30,7 @@ const Interstate = () => {
           className={`bg-primaryPurple w-full h-[100vh] absolute flex items-center `}
         >
           <InterStateTravels />
-          <div className="flex-1 h-full flex items-center justify-center">
+          <div className="flex-1 h-full flex items-center justify-center max-sm:hidden">
             <img
               src={TravelBlue}
               // src={Object}
@@ -53,7 +53,7 @@ const Interstate = () => {
             textStyles="text-center text-[24px]"
           />
           <motion.div
-            className="mt-[8px] font-normal text-[24px] text-center w-[70%] mb-[40px]"
+            className="mt-[8px] font-normal text-[24px] text-center w-[70%] mb-[40px] max-md:w-[80%] max-md:text-[16px]"
             variants={navVariants}
             initial="hidden"
             whileInView={"show"}

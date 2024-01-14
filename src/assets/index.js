@@ -11,10 +11,16 @@ import printBlue from "./printBlue.svg";
 import Travel2 from "./Travel2.svg";
 import TravelBlue from "./TravelBlue.svg";
 import DeliveryBlue from "./DeliveryBlue.svg";
+import McCEO from "./McCEO.jpg";
+import McCEOsm from "./McCEOsm.png";
+import roundCeo from "./roundCeo.png";
 
 export {
   bgBlue,
   DeliveryBlue,
+  McCEO,
+  roundCeo,
+  McCEOsm,
   printBlue,
   TravelBlue,
   bgWhine,

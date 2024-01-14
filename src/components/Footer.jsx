@@ -6,8 +6,11 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <footer className=" bg-black px-[64px] py-[40px]" id="contactUs">
-      <div className="flex justify-between items-start gap-20 flex-wrap max-lg:flex-col">
+    <footer
+      className=" bg-black px-[64px] py-[40px] max-md:px-[20px]"
+      id="contactUs"
+    >
+      <div className="flex justify-between items-start gap-20 flex-wrap max-lg:flex-col ">
         <div className="flex flex-col items-start">
           <a href="/">
             <img src={spidgeniusremovebg} alt="logo" width={150} height={46} />
@@ -29,7 +32,7 @@ const Footer = () => {
             })}
           </div>
         </div>
-        <div className="flex flex-1 justify-around lg:gap-10 gap-20 flex-wrap">
+        <div className="flex flex-1 justify-around lg:gap-10 gap-20 flex-wrap max-md:justify-start">
           {footerLinks?.map((section, index) => {
             return (
               <div key={index}>
@@ -69,7 +72,9 @@ const Footer = () => {
           />{" "}
           <p>Copyright. All rights reserved.</p>
         </div>
-        <p className="font-montserrat cursor-pointer">Terms & Conditions</p>
+        <p className="font-montserrat cursor-pointer max-md:mt-[20px]">
+          Terms & Conditions
+        </p>
       </div>
     </footer>
   );

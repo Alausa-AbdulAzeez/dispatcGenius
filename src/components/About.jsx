@@ -17,7 +17,7 @@ const About = () => {
           title="| About Spidgenius"
           textStyles="text-center text-[20px]"
         />
-        <div className="mt-[8px] font-normal text-[20px] text-center w-[70%] ">
+        <div className="mt-[8px] font-normal text-[20px] text-center w-[70%] max-md:w-[80%] max-md:text-[16px]">
           Welcome to{" "}
           <span className="font-extrabold text-black">SpidGenius</span>, where
           we transcend boundaries, connect destinations, and bring your visions

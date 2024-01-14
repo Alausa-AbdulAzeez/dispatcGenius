@@ -7,7 +7,7 @@ import ServiceCard from "./ServiceCard";
 
 const Services = () => {
   return (
-    <section className="py-[30px] pt-[50px] bg-[#F5F6FF] h-[100vh] max-md:h-auto">
+    <section className="py-[30px] pt-[50px] bg-[#F5F6FF] max-md:h-auto h-auto">
       <motion.div
         variants={staggerContainer}
         initial="hidden"

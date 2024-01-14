@@ -1,12 +1,7 @@
 import React, { useEffect, useState } from "react";
 import {
-  Character,
-  Character2,
   DeliveryBlue,
-  Object,
-  Travel2,
   TravelBlue,
-  print2,
   printBlue,
   spidgeniusremovebg,
 } from "../assets/index";

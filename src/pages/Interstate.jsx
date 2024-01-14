@@ -40,7 +40,7 @@ const Interstate = () => {
           className={` mx-auto flex flex-col items-center`}
         >
           <TypingText
-            title="| Publishing (Graphics and General Printing):"
+            title="| Inter-state travels"
             textStyles="text-center text-[24px]"
           />
           <motion.div

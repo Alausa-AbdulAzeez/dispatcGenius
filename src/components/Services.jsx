@@ -30,7 +30,12 @@ const Services = () => {
       >
         {services?.map((service, index) => {
           return (
-            <ServiceCard key={service?.label} {...service} index={index} />
+            <ServiceCard
+              key={service?.label}
+              {...service}
+              index={index}
+              link={service?.link}
+            />
           );
         })}
       </motion.section>

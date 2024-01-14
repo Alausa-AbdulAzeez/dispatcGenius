@@ -2,6 +2,7 @@ import React from "react";
 import { copyrightSign } from "../assets/icons";
 import { footerLinks, socialMedia } from "../utils/constants";
 import { spidgeniusremovebg } from "../assets/index";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -43,7 +44,14 @@ const Footer = () => {
                         key={link?.name}
                         className="mt-3 text-white-400 font-montserrat text-base leading-normal hover:text-slate-gray cursor-pointer"
                       >
-                        <a href="">{link?.name}</a>
+                        <Link
+                          to={link?.link}
+                          target={
+                            link?.name === "+2348090987851" ? "_blank" : ""
+                          }
+                        >
+                          {link?.name}
+                        </Link>
                       </li>
                     );
                   })}

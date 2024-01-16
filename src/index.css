@@ -9,3 +9,60 @@
   font-family: "Nunito Sans", sans-serif;
   scroll-behavior: smooth;
 }
+
+/* Add these classes to your Tailwind CSS stylesheet */
+.quotation-marked {
+  quotes: "\201C""\201D"; /* Unicode for left and right double quotation marks */
+  position: relative;
+}
+
+.quotation-marked::before,
+.quotation-marked::after {
+  content: open-quote;
+  font-size: 10rem; /* Adjust the font size as needed */
+  color: #3498db; /* Blue color code */
+  /* height: 40px; */
+  /* display: inline-flex; */
+  /* overflow: hidden; */
+  /* position: absolute; */
+  height: 0;
+  position: absolute;
+}
+
+.quotation-marked::before {
+}
+
+.quotation-marked::after {
+  content: close-quote;
+  margin-left: 0.1em; /* Adjust the margin as needed */
+}
+
+blockquote {
+  font-size: 1.5em;
+  line-height: 1.5em;
+}
+
+blockquote:before {
+  content: open-quote;
+}
+
+blockquote:after {
+  content: close-quote;
+}
+
+blockquote:before,
+blockquote:after {
+  display: inline-block;
+  vertical-align: bottom;
+  color: #1649eb;
+  font-size: 10em;
+  top: 0.1em;
+  position: relative;
+}
+blockquote:before {
+  margin-right: 20px;
+}
+blockquote:after {
+  top: 0.45em;
+  margin-left: 20px;
+}

@@ -24,7 +24,7 @@ export const services = [
 
 export const navLinks = [
   { href: "/", label: "Home" },
-  { href: "/dispatch", label: "Logistice" },
+  { href: "/dispatch", label: "Logistics" },
   { href: "/publishing", label: "Printing & Publishing" },
   { href: "/travels", label: "Transport" },
 ];

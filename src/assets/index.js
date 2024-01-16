@@ -5,6 +5,7 @@ import Character from "./Character.svg";
 import Character2 from "./Character2.svg";
 import Object from "./Object.svg";
 import spidgeniusremovebg from "./spidgeniusremovebg.png";
+import spidgenius2 from "./spidgenius2.svg";
 import truckFast from "./truckFast.svg";
 import print2 from "./print2.svg";
 import printBlue from "./PrintBlue.svg";
@@ -25,6 +26,7 @@ export {
   travelingDude,
   logisticsDude,
   DeliveryBlue,
+  spidgenius2,
   bgLg,
   McCEO,
   roundCeo,

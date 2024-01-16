@@ -24,9 +24,12 @@ const ServiceCard = ({ imgURL, label, subtext, index, link }) => {
       <h3 className="mt-5 font-palanquin text-3xl leading-normal font-bold max-md:text-2xl">
         {label}
       </h3>
-      {subtext?.map((sub) => {
+      {subtext?.map((sub, index) => {
         return (
-          <li className="mt-3 break-words font-montserrat text-lg leading-normal text-slate-gray">
+          <li
+            className="mt-3 break-words font-montserrat text-lg leading-normal text-slate-gray"
+            key={index}
+          >
             {sub}
           </li>
         );

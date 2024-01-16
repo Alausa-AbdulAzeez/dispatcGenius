@@ -19,9 +19,11 @@ import travelingDude from "./printingLg.svg";
 import McCEO from "./McCEO.jpg";
 import McCEOsm from "./McCEOsm.png";
 import roundCeo from "./roundCeo.png";
+import handShake from "./handShake.jpg";
 
 export {
   bgBlue,
+  handShake,
   designerDude,
   travelingDude,
   logisticsDude,

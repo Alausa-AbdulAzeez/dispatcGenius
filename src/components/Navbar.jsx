@@ -6,41 +6,51 @@ import { navVariants } from "../utils/motion";
 import { spidgeniusremovebg } from "../assets";
 import { navLinks } from "../utils/constants";
 
-const Navbar = () => {
+const Navbar = ({ isVisible }) => {
+  console.log(isVisible);
   return (
     <motion.div
-      className="absolute flex justify-between w-full pl-[40px]  top-[30px] z-[3] max-sm:pl-[10px]"
+      className={`fixed top-0 left-0 w-full px-[86px] py-[10px] h-[70px] flex justify-between z-[3] ${
+        isVisible ? "bg-white shadow-md" : "bg-transparent"
+      }`}
       variants={navVariants}
       initial="hidden"
       whileInView={"show"}
     >
-      <Link to={"/"}>
+      <Link to={"/"} className="flex items-center">
         <img src={spidgeniusremovebg} alt="Logo" />
       </Link>
-      <ul className="flex-1 flex justify-center items-center gap-16 max-lg:hidden">
-        {navLinks?.map((item, index) => {
-          return (
-            <NavLink
-              key={item?.label}
-              style={{ textDecoration: "none" }}
-              to={item.href}
-            >
-              {({ isActive }) => (
-                <li
-                  className={`leading-normal text-lg text-[#d6d6d6] ${
-                    isActive ? "text-pale-blue" : "text-[#d6d6d6]"
-                  }`}
-                >
-                  {item?.label}
-                </li>
-              )}
-            </NavLink>
-          );
-        })}
-        <li className={`font-montserrat leading-normal text-lg text-[#d6d6d6]`}>
-          <a href="#contactUs">Contact us</a>
-        </li>
-      </ul>
+      <div className="flex flex-1 max-w-[700px]">
+        <ul className="w-[90%] flex  h-full items-center justify-evenly max-lg:hidden z-[4] bg-white">
+          {navLinks?.map((item, index) => {
+            return (
+              <NavLink
+                key={item?.label}
+                style={{ textDecoration: "none" }}
+                to={item.href}
+              >
+                {({ isActive }) => (
+                  <li
+                    className={`leading-normal text-[14px]   font-semibold ${
+                      isActive
+                        ? "text-[#575757] underline underline-offset-4"
+                        : "text-[#d6d6d6]"
+                    }`}
+                  >
+                    {item?.label}
+                  </li>
+                )}
+              </NavLink>
+            );
+          })}
+        </ul>
+
+        <a href="#contactUs">
+          <button className="bg-main-blue w-[120px] px-[20px] h-full max-md:px-[14px] max-md:py-[7px] border border-transparent text-white rounded-sm  cursor-pointer hover:bg-[#243469] hover:text-white transition-all duration-[3000] ease-in-out">
+            Contact us
+          </button>
+        </a>
+      </div>
     </motion.div>
   );
 };

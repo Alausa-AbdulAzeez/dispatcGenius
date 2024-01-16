@@ -1,34 +1,32 @@
-import { truckFast } from "../assets";
+import { DeliveryBlue, TravelBlue, printBlue, truckFast } from "../assets";
 import { facebook, instagram, twitter } from "../assets/icons";
 
 export const services = [
   {
-    imgURL: truckFast,
-    label: "Dispatch services",
-    subtext: "Swift, Secure, Reliable: Your parcels, our priority.",
+    imgURL: DeliveryBlue,
+    label: "Logistics",
+    subtext: ["Pickup", "Delivery", "Errands"],
     link: "/dispatch",
   },
   {
-    imgURL: truckFast,
-    label: "Publishing",
-    subtext:
-      "From Imagination to Reality: Transforming ideas into stunning prints.",
+    imgURL: printBlue,
+    label: "Printing and Publishing",
+    subtext: ["Graphics design", "General printing"],
     link: "/publishing",
   },
   {
-    imgURL: truckFast,
-    label: "Inter-state travels",
-    subtext:
-      "Beyond Borders, Beyond Expectations: Travel with comfort and confidence.",
+    imgURL: TravelBlue,
+    label: "Transport",
+    subtext: ["Interstate travelling", "Hire me (Vehicle)"],
     link: "/travels",
   },
 ];
 
 export const navLinks = [
   { href: "/", label: "Home" },
-  { href: "/dispatch", label: "Dispatch" },
-  { href: "/publishing", label: "Publishing" },
-  { href: "/travels", label: "Travels" },
+  { href: "/dispatch", label: "Logistice" },
+  { href: "/publishing", label: "Printing & Publishing" },
+  { href: "/travels", label: "Transport" },
 ];
 
 export const footerLinks = [

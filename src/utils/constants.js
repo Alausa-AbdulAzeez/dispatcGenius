@@ -52,9 +52,14 @@ export const services = [
 
 export const navLinks = [
   { href: "/", label: "Home" },
-  { href: "/dispatch", label: "Logistics" },
+  { href: "/logistics", label: "Logistics" },
   { href: "/publishing", label: "Printing & Publishing" },
   { href: "/travels", label: "Transport" },
+];
+
+export const sectionLinks = [
+  { href: "#partnership", label: "Partnership" },
+  { href: "#career", label: "Career" },
 ];
 
 export const footerLinks = [

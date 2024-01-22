@@ -4,10 +4,9 @@ import { motion } from "framer-motion";
 import { Link, NavLink } from "react-router-dom";
 import { navVariants } from "../utils/motion";
 import { spidgeniusremovebg } from "../assets";
-import { navLinks } from "../utils/constants";
+import { navLinks, sectionLinks } from "../utils/constants";
 
 const Navbar = ({ isVisible }) => {
-  console.log(isVisible);
   return (
     <motion.div
       className={`fixed top-0 left-0 w-full px-[86px] py-[10px] h-[70px] flex justify-between z-[3] ${
@@ -20,7 +19,7 @@ const Navbar = ({ isVisible }) => {
       <Link to={"/"} className="flex items-center">
         <img src={spidgeniusremovebg} alt="Logo" />
       </Link>
-      <div className="flex flex-1 max-w-[700px]">
+      <div className="flex flex-1 max-w-[800px]">
         <ul className="w-[90%] flex  h-full items-center justify-evenly max-lg:hidden z-[4] bg-white">
           {navLinks?.map((item, index) => {
             return (
@@ -43,6 +42,14 @@ const Navbar = ({ isVisible }) => {
               </NavLink>
             );
           })}
+          {sectionLinks?.map((sectionLink) => (
+            <a
+              href={sectionLink?.href}
+              className="leading-normal text-[14px] text-[#d6d6d6] font-semibold"
+            >
+              {sectionLink?.label}
+            </a>
+          ))}
         </ul>
 
         <a href="#contactUs">

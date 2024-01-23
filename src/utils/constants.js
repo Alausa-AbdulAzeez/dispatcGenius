@@ -86,3 +86,10 @@ export const socialMedia = [
   { src: twitter, alt: "twitter logo" },
   { src: instagram, alt: "instagram logo" },
 ];
+
+export const logisticsFeatures = [
+  "Pickup, delivery and errands anywhere in Lagos state.",
+  "We ensure your product/item is safe and intact with our experienced riders",
+  "⁠Fast and Accurate service delivery",
+  "⁠Reliable and effective communication",
+];

@@ -33,7 +33,7 @@ const Navbar = ({ isVisible }) => {
                     className={`leading-normal text-[14px]   font-semibold ${
                       isActive
                         ? "text-[#575757] underline underline-offset-4"
-                        : "text-[#d6d6d6]"
+                        : "text-[#aaaaaa]"
                     }`}
                   >
                     {item?.label}
@@ -45,7 +45,7 @@ const Navbar = ({ isVisible }) => {
           {sectionLinks?.map((sectionLink) => (
             <a
               href={sectionLink?.href}
-              className="leading-normal text-[14px] text-[#d6d6d6] font-semibold"
+              className="leading-normal text-[14px] text-[#aaaaaa] font-semibold"
             >
               {sectionLink?.label}
             </a>

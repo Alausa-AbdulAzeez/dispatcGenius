@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import {
   DeliveryBlue,
   TravelBlue,
+  bgLg,
   printBlue,
   spidgeniusremovebg,
 } from "../assets/index";
@@ -11,42 +12,50 @@ import { navVariants, staggerContainer } from "../utils/motion";
 import PublishingHeroText from "../components/PublishingHeroText";
 import InterStateTravels from "../components/InterStateTravels";
 import { Link, NavLink } from "react-router-dom";
-import { navLinks } from "../utils/constants";
+import { logisticsFeatures, navLinks } from "../utils/constants";
 import Footer from "../components/Footer";
 import { TypingText } from "../components/CustomTexts";
 import Button from "../components/Button";
-import { arrowRight } from "../assets/icons";
+import { arrowRight, arrowRightWhite } from "../assets/icons";
 import Navbar from "../components/Navbar";
+import StartSteps from "../components/StartSteps";
+import BackToTop from "../components/BackToTop";
 
-const Dispatch = () => {
+const Dispatch = ({ isVisible, scrollToTop }) => {
   return (
     <>
       <div
         className={`w-full min-h-[100vh] relative transition-opacity duration-[3000] ease-in-out flex flex-col `}
       >
-        <Navbar />
+        {isVisible && <BackToTop scrollToTop={scrollToTop} />}
+        <Navbar isVisible={isVisible} />
 
-        <div
-          className={`bg-primaryGreen w-full h-[100vh] absolute flex items-center `}
-        >
-          <HeroText />
-          <div className="flex-1 h-full flex items-center justify-center max-sm:hidden">
+        <div className={` w-full h-full absolute flex items-center `}>
+          <div className="bg-white w-full h-full absolute top-0 left-0 overflow-hidden">
             <img
-              src={DeliveryBlue}
-              // src={Object}
-              alt="delivery-boy-image"
-              className="object-fill h-[460px] w-[370px]"
+              src={bgLg}
+              alt="bg"
+              className="h-[100%] w-[100%] object-cover"
             />
+          </div>
+
+          <HeroText />
+          <div className="flex-1 h-full flex items-center justify-center ">
+            {/* <img
+            src={DeliveryBlue}
+            alt="delivery-boy-image"
+            className="object-fill h-[460px] w-[370px]"
+          /> */}
           </div>
         </div>
       </div>
-      <section className="py-[30px] pt-[50px] ">
+      <section className="py-[30px] pt-[50px] bg-slate-50 ">
         <motion.div
           variants={staggerContainer}
           initial="hidden"
           whileInView="show"
           viewport={{ once: false, amount: 0.25 }}
-          className={` mx-auto flex flex-col items-center`}
+          className={` mx-auto flex flex-col items-center `}
         >
           <TypingText
             title="| Dispatch services"
@@ -58,18 +67,30 @@ const Dispatch = () => {
             initial="hidden"
             whileInView={"show"}
           >
-            At <span className="font-extrabold text-black ">SpidGenius,</span>{" "}
-            we pride ourselves on delivering prompt and reliable dispatch
-            services. Whether it's urgent documents, packages, or specialized
-            shipments, our dedicated team ensures swift and secure delivery to
-            your doorstep. We go beyond logistics, providing a seamless
-            experience that you can trust.
+            <h1 className="text-[50px] mb-[30px]">
+              We render services such as
+            </h1>
+            <div className="flex flex-col gap-[10px] mt-[30px]">
+              {logisticsFeatures?.map((logisticsFeature, index) => {
+                return (
+                  <StartSteps
+                    key={logisticsFeature}
+                    number={index + 1}
+                    text={logisticsFeature}
+                  />
+                );
+              })}
+            </div>
           </motion.div>
-          <Link to={"https://wa.me/+2348090987851"} target="_blank">
+          <Link
+            to={"https://wa.me/+2348090987851"}
+            target="_blank"
+            className="mb-[50px]"
+          >
             <Button
               label="Make enquiries"
-              iconUrl={arrowRight}
-              backgroundColor="bg-[#999]"
+              iconUrl={arrowRightWhite}
+              backgroundColor="bg-[#1649EB]"
               textColor="text-white"
             />
           </Link>

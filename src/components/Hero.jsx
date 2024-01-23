@@ -106,11 +106,11 @@ const Hero = () => {
         </div> */}
         <HeroText />
         <div className="flex-1 h-full flex items-center justify-center ">
-          <img
+          {/* <img
             src={DeliveryBlue}
             alt="delivery-boy-image"
             className="object-fill h-[460px] w-[370px]"
-          />
+          /> */}
         </div>
       </div>
       <div

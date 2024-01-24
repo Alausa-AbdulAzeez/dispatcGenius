@@ -14,12 +14,14 @@ const Home = () => {
       <div className="w-[100vw] h-[100vh]">
         <Hero />
       </div>
+
       <Services />
       <About />
       <Insights />
       <Partner />
       <Careers />
       <OurCeo />
+
       <Footer />
     </div>
   );

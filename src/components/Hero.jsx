@@ -64,7 +64,7 @@ const Hero = () => {
       className={`w-full h-full relative transition-opacity duration-[3000] ease-in-out`}
     >
       {isVisible && <BackToTop scrollToTop={scrollToTop} />}
-      <Navbar isVisible={isVisible} />
+      <Navbar isVisible={isVisible} pageType={"mainPage"} />
       <div
         className={` w-full h-full absolute flex items-center ${
           activeIndex === 1 ? "opacity-[1]" : "opacity-[0]"

@@ -6,7 +6,7 @@ import { navVariants } from "../utils/motion";
 import { spidgeniusremovebg } from "../assets";
 import { navLinks, sectionLinks } from "../utils/constants";
 
-const Navbar = ({ isVisible }) => {
+const Navbar = ({ isVisible, pageType }) => {
   return (
     <motion.div
       className={`fixed top-0 left-0 w-full px-[86px] py-[10px] h-[70px] flex justify-between z-[3] ${
@@ -44,7 +44,11 @@ const Navbar = ({ isVisible }) => {
           })}
           {sectionLinks?.map((sectionLink) => (
             <a
-              href={sectionLink?.href}
+              href={
+                pageType === "mainPage"
+                  ? sectionLink?.href
+                  : sectionLink?.subHref
+              }
               className="leading-normal text-[14px] text-[#aaaaaa] font-semibold"
             >
               {sectionLink?.label}

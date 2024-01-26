@@ -1,5 +1,5 @@
 import React from "react";
-import { TravelBlue } from "../assets/index";
+import { TravelBlue, transport } from "../assets/index";
 import { motion } from "framer-motion";
 import { navVariants, staggerContainer } from "../utils/motion";
 import InterStateTravels from "../components/InterStateTravels";
@@ -8,26 +8,34 @@ import Footer from "../components/Footer";
 import { TypingText } from "../components/CustomTexts";
 import Button from "../components/Button";
 import Navbar from "../components/Navbar";
+import BackToTop from "../components/BackToTop";
+import { transportFeatures } from "../utils/constants";
+import StartSteps from "../components/StartSteps";
 
-const Interstate = () => {
+const Interstate = ({ isVisible, scrollToTop }) => {
   return (
     <>
       <div
         className={`w-full min-h-[100vh] relative transition-opacity duration-[3000] ease-in-out flex flex-col `}
       >
-        <Navbar />
+        {isVisible && <BackToTop scrollToTop={scrollToTop} />}
+        <Navbar isVisible={isVisible} pageType={"subPage"} />
 
-        <div
-          className={`bg-primaryPurple w-full h-[100vh] absolute flex items-center `}
-        >
+        <div className={`w-full h-[100vh] absolute flex items-center `}>
+          <div className="bg-white w-full h-full absolute top-0 left-0 overflow-hidden">
+            <img
+              src={transport}
+              alt="bg"
+              className="h-[100%] w-[100%] object-cover"
+            />
+          </div>
           <InterStateTravels />
           <div className="flex-1 h-full flex items-center justify-center max-sm:hidden">
-            <img
+            {/* <img
               src={TravelBlue}
-              // src={Object}
               alt="delivery-boy-image"
               className="object-fill h-[460px] w-[370px]"
-            />
+            /> */}
           </div>
         </div>
       </div>
@@ -49,17 +57,25 @@ const Interstate = () => {
             initial="hidden"
             whileInView={"show"}
           >
-            Experience the freedom of boundless exploration with
-            <span className="font-extrabold text-black">SpidGenius'</span>{" "}
-            interstate travel services. We don't just take you from one place to
-            another; we craft journeys filled with comfort, convenience, and
-            unforgettable moments. Our commitment to safety and efficiency
-            ensures that every trip becomes a memorable adventure.
+            <h1 className="text-[50px] mb-[30px]">
+              We render services such as
+            </h1>
+            <div className="flex flex-col gap-[10px] mt-[30px]">
+              {transportFeatures?.map((transportFeature, index) => {
+                return (
+                  <StartSteps
+                    key={transportFeature}
+                    number={index + 1}
+                    text={transportFeature}
+                  />
+                );
+              })}
+            </div>
           </motion.div>
           <Link to={"#"}>
             <Button
               label="Coming soon"
-              backgroundColor="bg-[#999]"
+              backgroundColor="bg-[#1649EB]"
               textColor="text-white"
             />
           </Link>

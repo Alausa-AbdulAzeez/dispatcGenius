@@ -28,7 +28,7 @@ const Dispatch = ({ isVisible, scrollToTop }) => {
         className={`w-full min-h-[100vh] relative transition-opacity duration-[3000] ease-in-out flex flex-col `}
       >
         {isVisible && <BackToTop scrollToTop={scrollToTop} />}
-        <Navbar isVisible={isVisible} />
+        <Navbar isVisible={isVisible} pageType={"subPage"} />
 
         <div className={` w-full h-full absolute flex items-center `}>
           <div className="bg-white w-full h-full absolute top-0 left-0 overflow-hidden">

@@ -49,10 +49,10 @@ const About = () => {
               where we transcend boundaries, connect destinations, and bring
               your visions to life. We seamlessly blend{" "}
               <span className="font-extrabold text-black">
-                dispatch services
+                dispatch services,
               </span>{" "}
               <span className="font-extrabold text-black">
-                interstate travels
+                transport services
               </span>
               , and cutting-edge{" "}
               <span className="font-extrabold text-black">publishing</span> ,

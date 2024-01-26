@@ -8,6 +8,8 @@ const Footer = () => {
   return (
     <footer
       className=" bg-black px-[64px] py-[40px] max-md:px-[20px]"
+      // className=" bg-textGray px-[64px] py-[40px] max-md:px-[20px]"
+      // className=" bg-[#9b9b9b] px-[64px] py-[40px] max-md:px-[20px]"
       id="contactUs"
     >
       <div className="flex justify-between items-start gap-20 flex-wrap max-lg:flex-col ">
@@ -72,9 +74,9 @@ const Footer = () => {
           />{" "}
           <p>Copyright. All rights reserved.</p>
         </div>
-        <p className="font-montserrat cursor-pointer max-md:mt-[20px]">
+        {/* <p className="font-montserrat cursor-pointer max-md:mt-[20px]">
           Terms & Conditions
-        </p>
+        </p> */}
       </div>
     </footer>
   );

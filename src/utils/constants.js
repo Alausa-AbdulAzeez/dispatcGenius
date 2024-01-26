@@ -71,6 +71,13 @@ export const footerLinks = [
       { name: "Interstate travels", link: "/travels" },
     ],
   },
+  {
+    title: "Join us",
+    links: [
+      { name: "Partnership", link: "/dispatch" },
+      { name: "Career", link: "/publishing" },
+    ],
+  },
 
   {
     title: "Get in touch",

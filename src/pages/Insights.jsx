@@ -8,7 +8,7 @@ import InsightCard from "../components/InsightCard";
 const Insights = () => {
   return (
     <section
-      className={`py-[30px] pt-[50px] bg-[#F5F6FF] max-md:h-auto h-auto px-[64px]`}
+      className={`py-[30px] pt-[50px] bg-[#F5F6FF] max-md:h-auto h-auto px-[64px] max-sm:px-[20px] max-md:px-[100px]`}
     >
       <motion.div
         variants={staggerContainer}

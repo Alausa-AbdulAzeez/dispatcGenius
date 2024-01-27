@@ -4,7 +4,7 @@ import React from "react";
 
 const BlogPost = ({ title, content, image }) => {
   return (
-    <div className="bg-white p-6 rounded-lg shadow-md max-w-[700px] border-l-[5px] border-l-main-blue">
+    <div className="bg-white p-6 rounded-lg shadow-md max-w-[700px] border-l-[5px] border-l-main-blue ">
       <img
         src={image}
         cn

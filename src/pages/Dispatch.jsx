@@ -5,6 +5,7 @@ import {
   bgLg,
   printBlue,
   spidgeniusremovebg,
+  whiteBg,
 } from "../assets/index";
 import HeroText from "../components/HeroText";
 import { motion } from "framer-motion";
@@ -35,7 +36,12 @@ const Dispatch = ({ isVisible, scrollToTop }) => {
             <img
               src={bgLg}
               alt="bg"
-              className="h-[100%] w-[100%] object-cover"
+              className="h-[100%] w-[100%] object-cover max-md:hidden"
+            />
+            <img
+              src={whiteBg}
+              alt="printing press"
+              className="h-[100%] w-[100%] object-cover hidden max-md:block"
             />
           </div>
 
@@ -62,15 +68,15 @@ const Dispatch = ({ isVisible, scrollToTop }) => {
             textStyles="text-center text-[24px]"
           />
           <motion.div
-            className="mt-[8px] font-normal text-[24px] text-center w-[70%] mb-[40px] max-md:w-[80%] max-md:text-[16px]"
+            className="mt-[8px] font-normal text-[24px] text-center w-[70%] max-md:w-[90%] mb-[40px] max-lg:w-[80%] max-md:text-[16px]"
             variants={navVariants}
             initial="hidden"
             whileInView={"show"}
           >
-            <h1 className="text-[50px] mb-[30px]">
+            <h1 className="text-[50px] mb-[30px] max-md:text-[35px]">
               We render services such as
             </h1>
-            <div className="flex flex-col gap-[10px] mt-[30px]">
+            <div className="flex flex-col gap-[10px] mt-[30px] max-md:gap-[15px]">
               {logisticsFeatures?.map((logisticsFeature, index) => {
                 return (
                   <StartSteps

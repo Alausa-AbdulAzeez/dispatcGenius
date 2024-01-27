@@ -58,7 +58,7 @@ const Careers = () => {
             flexibility, freedom and competitive earnings by working with
             SpidGenius.
           </p>
-          <Link to={"https://wa.me/+2348090987851"} target="_blank">
+          <Link to={"https://forms.gle/j1sPsri69rpNoDiT7"} target="_blank">
             <button className="bg-main-blue mt-[20px]  px-[20px] max-md:px-[14px] max-md:py-[7px] py-[14px] border border-transparent text-white rounded-md  cursor-pointer hover:bg-dark-blue hover:text-white hover:border-white transition-all duration-[3000] ease-in-out">
               Register here
             </button>

@@ -103,3 +103,6 @@ blockquote:after {
 .nav::-webkit-scrollbar-thumb:hover {
   background: #818181;
 }
+.maxWidth {
+  max-width: 500px !important;
+}

@@ -17,7 +17,7 @@ const AimsAndObjectivesCard = ({
   return (
     <div
       onClick={() => navigate(`${link}`)}
-      className={`flex-1 sm:w-[350px] sm:min-w-[350px] w-full rounded-[20px] shadow-3xl px-10 py-10 max-md:px-[16px] max-md:min-w-[260px] max-w-[${maxWidth}]`}
+      className={`flex-1 sm:w-[350px] sm:min-w-[350px] w-full rounded-[20px] shadow-3xl px-10 py-10 max-md:px-[16px] max-md:min-w-[260px] maxWidth`}
     >
       <div className=" w-full h-[150px] overflow-hidden ">
         <img

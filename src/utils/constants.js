@@ -3,6 +3,10 @@ import {
   TravelBlue,
   handShake,
   printBlue,
+  sAim,
+  sMission,
+  sObjective,
+  sVision,
   spidgenius2,
   truckFast,
 } from "../assets";
@@ -53,6 +57,38 @@ export const services = [
     label: "Transport",
     subtext: ["Interstate travelling", "Hire me (Vehicle)"],
     link: "/travels",
+  },
+];
+export const aimsAndObjectives = [
+  {
+    imgURL: sAim,
+    label: "Aims",
+    subtext: [
+      "To render essential logistics and printing services with promptness and accuracy ",
+    ],
+    link: "",
+  },
+  {
+    imgURL: sObjective,
+    label: "Objective",
+    subtext: ["To ensure customers are satisfied and well served"],
+    link: "",
+  },
+  {
+    imgURL: sMission,
+    label: "Mission",
+    subtext: [
+      "To close the gap between the stages of production and distribution and enhance speed delivery with accuracy",
+    ],
+    link: "",
+  },
+  {
+    imgURL: sVision,
+    label: "Vision",
+    subtext: [
+      "To become a top leader in the integration of production and distribution with quality services that stands out. While making navigation within nations and states easy globally.",
+    ],
+    link: "",
   },
 ];
 

@@ -4,16 +4,22 @@ import { arrowRight } from "../assets/icons";
 import Button from "./Button";
 import { Link, useNavigate } from "react-router-dom";
 
-const ServiceCard = ({ imgURL, label, subtext, index, link }) => {
+const AimsAndObjectivesCard = ({
+  imgURL,
+  label,
+  subtext,
+  index,
+  link,
+  maxWidth,
+}) => {
   const navigate = useNavigate();
 
   return (
-    <motion.div
-      variants={fadeIn("right", "spring", index * 0.5, 0.75)}
+    <div
       onClick={() => navigate(`${link}`)}
-      className={`flex-1 sm:w-[350px] sm:min-w-[350px] w-full rounded-[20px] shadow-3xl px-10 py-16 max-md:px-[16px] max-md:min-w-[260px]`}
+      className={`flex-1 sm:w-[350px] sm:min-w-[350px] w-full rounded-[20px] shadow-3xl px-10 py-10 max-md:px-[16px] max-md:min-w-[260px] max-w-[${maxWidth}]`}
     >
-      <div className=" w-full h-[200px] overflow-hidden ">
+      <div className=" w-full h-[150px] overflow-hidden ">
         <img
           src={imgURL}
           alt="bg"
@@ -34,8 +40,8 @@ const ServiceCard = ({ imgURL, label, subtext, index, link }) => {
           </li>
         );
       })}
-    </motion.div>
+    </div>
   );
 };
 
-export default ServiceCard;
+export default AimsAndObjectivesCard;

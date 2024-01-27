@@ -3,6 +3,9 @@ import { fadeIn, staggerContainer } from "../utils/motion";
 import { TypingText } from "./CustomTexts";
 import { motion } from "framer-motion";
 import { spidgenius2, spidgeniusweb } from "../assets";
+import { aimsAndObjectives } from "../utils/constants";
+import ServiceCard from "./ServiceCard";
+import AimsAndObjectivesCard from "./AimsAndObjectivesCard";
 
 const About = () => {
   return (
@@ -18,7 +21,7 @@ const About = () => {
           title="| About Spidgenius"
           textStyles="text-center text-[20px]"
         />
-        <div className="flex mt-[24px]">
+        <div className="flex mt-[24px] max-md:flex-col">
           <motion.div
             className="h-full flex-1 relative"
             variants={fadeIn("right", "tween", 0.2, 1)}
@@ -35,7 +38,7 @@ const About = () => {
             </div>
           </motion.div>
           <motion.div
-            className="flex flex-col flex-1 items-center justify-center"
+            className="flex flex-col flex-1 items-center justify-center max-md:w-[90%]"
             variants={fadeIn("left", "tween", 0.2, 1)}
             initial="hidden"
             whileInView={"show"}
@@ -61,6 +64,25 @@ const About = () => {
             </div>
           </motion.div>
         </div>
+        <motion.section
+          className="max-container flex justify-center flex-wrap gap-9 px-[64px] my-[30px] max-md:px-[20px]"
+          variants={staggerContainer}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: false, amount: 0.25 }}
+        >
+          {aimsAndObjectives?.map((service, index) => {
+            return (
+              <AimsAndObjectivesCard
+                key={service?.label}
+                {...service}
+                index={index}
+                link={service?.link}
+                maxWidth={"500px"}
+              />
+            );
+          })}
+        </motion.section>
       </motion.div>
     </section>
   );

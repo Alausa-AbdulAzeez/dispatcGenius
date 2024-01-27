@@ -24,6 +24,10 @@ import handShake from "./handShake.jpg";
 import printing from "./printing.svg";
 import transport from "./transport.svg";
 import whiteBg from "./whiteBg.svg";
+import sAim from "./sAim.svg";
+import sMission from "./sMission.svg";
+import sVision from "./sVision.svg";
+import sObjective from "./sObjective.svg";
 import spidgeniusweb from "./spidgeniusweb.png";
 import logoMain from "./logoMain.png";
 
@@ -31,6 +35,10 @@ export {
   bgBlue,
   logoMain,
   whiteBg,
+  sAim,
+  sMission,
+  sVision,
+  sObjective,
   transport,
   spidgeniusweb,
   printing,

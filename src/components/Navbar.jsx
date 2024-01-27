@@ -62,7 +62,7 @@ const Navbar = ({ isVisible, pageType }) => {
           </button>
         </a>
       </div>
-      <div className="w-[100vw] h-[50px] top-[70px]  border-t border-t-[#ebebeb2c] absolute left-0 hidden max-md:flex justify-center  shadow-md">
+      <div className="w-[100vw] h-[50px] top-[70px]  border-t border-t-[#ebebeb2c] absolute left-0 hidden max-md:flex justify-center  bg-white shadow-md">
         <ul className="w-[90%] flex h-full gap-[25px] overflow-x-auto nav items-center  px-[20px]  z-[4]">
           {navLinks?.map((item, index) => (
             <NavLink

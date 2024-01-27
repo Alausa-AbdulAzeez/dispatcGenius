@@ -48,7 +48,9 @@ const Footer = () => {
                       >
                         {link?.name === "Partnership" ||
                         link?.name === "Career" ? (
-                          <a href={link?.link}>{link?.name}</a>
+                          <a href={link?.link} target="_blank">
+                            {link?.name}
+                          </a>
                         ) : (
                           <Link
                             to={link?.link}

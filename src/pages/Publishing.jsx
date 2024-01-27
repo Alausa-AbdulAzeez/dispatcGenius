@@ -1,5 +1,5 @@
 import React from "react";
-import { printBlue, printing } from "../assets/index";
+import { printBlue, printing, whiteBg } from "../assets/index";
 import { motion } from "framer-motion";
 import { navVariants, staggerContainer } from "../utils/motion";
 import PublishingHeroText from "../components/PublishingHeroText";
@@ -28,7 +28,12 @@ const Publishing = ({ isVisible, scrollToTop }) => {
             <img
               src={printing}
               alt="bg"
-              className="h-[100%] w-[100%] object-cover"
+              className="h-[100%] w-[100%] object-cover max-md:hidden"
+            />
+            <img
+              src={whiteBg}
+              alt="printing press"
+              className="h-[100%] w-[100%] object-cover hidden max-md:block"
             />
           </div>
           <PublishingHeroText />
@@ -55,12 +60,12 @@ const Publishing = ({ isVisible, scrollToTop }) => {
           />
 
           <motion.div
-            className="mt-[8px] font-normal text-[24px] text-center w-[70%] mb-[40px] max-md:w-[80%] max-md:text-[16px]"
+            className="mt-[8px] font-normal text-[24px] text-center w-[70%] mb-[40px] max-lg:w-[80%] max-md:w-[90%] max-md:text-[16px]"
             variants={navVariants}
             initial="hidden"
             whileInView={"show"}
           >
-            <h1 className="text-[50px] mb-[30px]">
+            <h1 className="text-[50px] mb-[30px] max-md:text-[35px]">
               We render services such as
             </h1>
             <div className="flex flex-col gap-[10px] mt-[30px]">
@@ -104,7 +109,7 @@ const Publishing = ({ isVisible, scrollToTop }) => {
             initial="hidden"
             whileInView={"show"}
           >
-            <h1 className="text-[50px] mb-[30px]">
+            <h1 className="text-[50px] mb-[30px] max-md:text-[35px]">
               A Visual Showcase of Our Expertise
             </h1>
             <SwiperComponent />

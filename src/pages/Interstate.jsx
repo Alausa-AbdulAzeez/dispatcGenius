@@ -1,5 +1,5 @@
 import React from "react";
-import { TravelBlue, transport } from "../assets/index";
+import { TravelBlue, transport, whiteBg } from "../assets/index";
 import { motion } from "framer-motion";
 import { navVariants, staggerContainer } from "../utils/motion";
 import InterStateTravels from "../components/InterStateTravels";
@@ -26,7 +26,12 @@ const Interstate = ({ isVisible, scrollToTop }) => {
             <img
               src={transport}
               alt="bg"
-              className="h-[100%] w-[100%] object-cover"
+              className="h-[100%] w-[100%] object-cover max-md:hidden"
+            />
+            <img
+              src={whiteBg}
+              alt="printing press"
+              className="h-[100%] w-[100%] object-cover hidden max-md:block"
             />
           </div>
           <InterStateTravels />
@@ -52,12 +57,12 @@ const Interstate = ({ isVisible, scrollToTop }) => {
             textStyles="text-center text-[24px]"
           />
           <motion.div
-            className="mt-[8px] font-normal text-[24px] text-center w-[70%] mb-[40px] max-md:w-[80%] max-md:text-[16px]"
+            className="mt-[8px] font-normal text-[24px] text-center w-[70%] mb-[40px] max-lg:w-[80%] max-md:w-[90%] max-md:text-[16px]"
             variants={navVariants}
             initial="hidden"
             whileInView={"show"}
           >
-            <h1 className="text-[50px] mb-[30px]">
+            <h1 className="text-[50px] mb-[30px] max-md:text-[35px]">
               We render services such as
             </h1>
             <div className="flex flex-col gap-[10px] mt-[30px]">

@@ -116,8 +116,8 @@ export const footerLinks = [
   {
     title: "Join us",
     links: [
-      { name: "Partnership", link: "#partnership" },
-      { name: "Career", link: "#career" },
+      { name: "Partnership", link: "https://wa.me/+2348090987851" },
+      { name: "Career", link: "https://forms.gle/j1sPsri69rpNoDiT7" },
     ],
   },
 

@@ -15,7 +15,7 @@ const InterStateTravels = () => {
         Unleash the Journey
       </div>
 
-      <div className="text-[20px] max-md:text-[14px]">
+      <div className="text-[20px] max-md:text-[14px] w-[80%] bg-white max-w-fit">
         Seamless Interstate Travel, Personalized Hire Services, and
         Unforgettable Group Picnics
       </div>

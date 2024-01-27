@@ -18,7 +18,7 @@ const HeroText = () => {
         Anytime,{" "}
         <span className="italic  underline    text-light-blue">Anywhere</span>
       </div>
-      <div className="text-[20px] max-md:text-[14px] text-textGray">
+      <div className="text-[20px] max-md:text-[14px] text-textGray w-[80%] bg-white max-w-fit">
         Ensuring prompt and secure delivery to your destination with swift
         dispatch services.
       </div>

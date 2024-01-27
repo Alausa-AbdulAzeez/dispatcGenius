@@ -17,7 +17,11 @@ const Navbar = ({ isVisible, pageType }) => {
       whileInView={"show"}
     >
       <Link to={"/"} className="flex items-center">
-        <img src={logoMain} alt="Logo" className="w-[140px] h-[66px]" />
+        <img
+          src={logoMain}
+          alt="Logo"
+          className="w-[140px] h-[66px] max-md:w-[106px] max-md:h-[50px]"
+        />
       </Link>
       <div className="flex flex-1 max-w-[800px] max-md:flex-none">
         <ul className="w-[90%] flex  h-full items-center justify-evenly max-md:hidden z-[4] bg-white">
@@ -57,11 +61,17 @@ const Navbar = ({ isVisible, pageType }) => {
           ))}
         </ul>
 
-        <a href="#contactUs">
+        <a
+          href="#contactUs"
+          className="bg-main-blue w-[120px] px-[20px] h-full  max-md:w-[100px] max-md:h-[40px] max-md:py-[0px] border border-transparent text-white rounded-sm  cursor-pointer hover:bg-[#243469] hover:text-white transition-all duration-[3000] ease-in-out flex items-center justify-center text-nowrap"
+        >
+          Contact us
+        </a>
+        {/* <a href="#contactUs">
           <button className="bg-main-blue w-[120px] px-[20px] h-full max-md:px-[14px] max-md:py-[7px] border border-transparent text-white rounded-sm  cursor-pointer hover:bg-[#243469] hover:text-white transition-all duration-[3000] ease-in-out">
             Contact us
           </button>
-        </a>
+        </a> */}
       </div>
       <div className="w-[100vw] h-[50px] top-[70px]  border-t border-t-[#ebebeb2c] absolute left-0 hidden max-md:flex justify-center  bg-white shadow-md">
         <ul className="w-[90%] flex h-full gap-[25px] overflow-x-auto nav items-center  px-[20px]  z-[4]">

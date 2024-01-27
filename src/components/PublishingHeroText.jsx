@@ -14,13 +14,13 @@ const PublishingHeroText = () => {
       <div className="font-bold text-[40px] max-md:text-[30px]">
         Publishing,
       </div>
-      <div className="font-bold text-[32px] bg-white no-underline text-[#1649EB]   max-md:text-[25px]">
+      <div className="font-bold text-[32px] bg-white no-underline text-[#1649EB]   max-md:text-[25px] w-fit">
         Graphics and{" "}
         <span className="italic    underline text-light-blue">
           General printing
         </span>
       </div>
-      <div className="text-[20px] max-md:text-[14px] ">
+      <div className="text-[20px] max-md:text-[14px] bg-white w-[80%]">
         Step into a world of creativity and precision with our publishing
         services.
       </div>

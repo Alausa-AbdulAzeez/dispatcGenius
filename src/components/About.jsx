@@ -38,12 +38,12 @@ const About = () => {
             </div>
           </motion.div>
           <motion.div
-            className="flex flex-col flex-1 items-center justify-center max-md:w-[90%]"
+            className="flex flex-col flex-1 items-center justify-center "
             variants={fadeIn("left", "tween", 0.2, 1)}
             initial="hidden"
             whileInView={"show"}
           >
-            <div className="mt-[8px] font-normal text-[40px] text-center w-[100%] max-md:text-[30px] text-main-blue italic">
+            <div className="mt-[8px] font-normal max-md:w-[90%] text-[40px] text-center w-[100%] max-md:text-[30px] text-main-blue italic">
               ...Promptness with accuracy
             </div>
             <div className=" mt-6 w-[90%] max-md:w-full px-4 font-normal text-[20px] text-center  max-md:text-[16px]">

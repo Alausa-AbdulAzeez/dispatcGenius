@@ -20,7 +20,7 @@ const OurCeo = () => {
         </div> */}
       </motion.div>
 
-      <div className="flex mt-[24px]">
+      <div className="flex mt-[24px] max-md:flex-col">
         <motion.div
           className="  h-full flex-1 relative"
           variants={fadeIn("right", "tween", 0.2, 1)}
@@ -35,7 +35,7 @@ const OurCeo = () => {
           />
         </motion.div>
         <motion.div
-          className="flex flex-col flex-1 items-center gap-[60px] justify-center"
+          className="flex flex-col flex-1 items-center gap-[60px] justify-center max-md:mb-[30px]"
           variants={fadeIn("left", "tween", 0.2, 1)}
           initial="hidden"
           whileInView={"show"}
@@ -44,7 +44,7 @@ const OurCeo = () => {
             <div className="mt-[8px] font-normal text-[40px] text-center w-[100%] max-md:text-[30px] text-main-blue">
               Olutayo Michael M.
             </div>
-            <div className=" font-semibold italic text-[20px] text-center w-[100%]  max-md:text-[30px] mb-[40px]">
+            <div className=" font-semibold italic text-[20px] text-center w-[100%]  max-md:text-[30px] mb-[40px] max-md:mb-[0px]">
               Associate Chartered Accountant CEO, SpidGenius
             </div>
           </div>

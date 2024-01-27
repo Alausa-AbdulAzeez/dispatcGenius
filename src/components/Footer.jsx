@@ -1,7 +1,7 @@
 import React from "react";
 import { copyrightSign } from "../assets/icons";
 import { footerLinks, socialMedia } from "../utils/constants";
-import { spidgeniusremovebg } from "../assets/index";
+import { logoMain, spidgeniusremovebg } from "../assets/index";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
@@ -15,7 +15,7 @@ const Footer = () => {
       <div className="flex justify-between items-start gap-20 flex-wrap max-lg:flex-col ">
         <div className="flex flex-col items-start">
           <a href="/">
-            <img src={spidgeniusremovebg} alt="logo" width={150} height={46} />
+            <img src={logoMain} alt="logo" width={150} height={46} />
           </a>
           <p className="mt-6 text-base leading-7 font-montserrat text-white-400 sm:max-w-sm">
             Join us in redefining the landscape of dispatch, travel, and
@@ -46,14 +46,19 @@ const Footer = () => {
                         key={index}
                         className="mt-3 text-white-400 font-montserrat text-base leading-normal hover:text-slate-gray cursor-pointer"
                       >
-                        <Link
-                          to={link?.link}
-                          target={
-                            link?.name === "+2348090987851" ? "_blank" : ""
-                          }
-                        >
-                          {link?.name}
-                        </Link>
+                        {link?.name === "Partnership" ||
+                        link?.name === "Career" ? (
+                          <a href={link?.link}>{link?.name}</a>
+                        ) : (
+                          <Link
+                            to={link?.link}
+                            target={
+                              link?.name === "+2348090987851" ? "_blank" : ""
+                            }
+                          >
+                            {link?.name}
+                          </Link>
+                        )}
                       </li>
                     );
                   })}
@@ -63,8 +68,8 @@ const Footer = () => {
           })}
         </div>
       </div>
-      <div className="flex justify-between text-white-400 mt-24 max-sm:flex-col max-sm:items-center">
-        <div className="flex flex-1 justify-start items-center gap-2 font-montserrat cursor-pointer">
+      <div className="flex justify-between text-white-400 mt-24  max-sm:flex-col max-sm:items-center">
+        <div className="flex max-md:mb-[40px] flex-1 justify-start items-center gap-2 font-montserrat cursor-pointer">
           <img
             src={copyrightSign}
             alt="copyright"

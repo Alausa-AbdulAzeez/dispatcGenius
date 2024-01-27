@@ -1,5 +1,5 @@
 import React from "react";
-import { handShake, roundCeo, spidgenius2 } from "../assets";
+import { career, handShake, roundCeo, spidgenius2 } from "../assets";
 import { motion } from "framer-motion";
 import { fadeIn, staggerContainer } from "../utils/motion";
 import { TypingText } from "./CustomTexts";
@@ -27,7 +27,7 @@ const Careers = () => {
         </div> */}
       </motion.div>
 
-      <div className="flex flex-row-reverse mt-[24px]">
+      <div className="flex flex-row-reverse mt-[24px] max-md:flex-col">
         <motion.div
           className="  h-full flex-1 relative"
           variants={fadeIn("left", "tween", 0.2, 1)}
@@ -36,9 +36,9 @@ const Careers = () => {
         >
           <div className="absolute w-full h-full bg-[#00000067] top-0 left-0"></div>
           <img
-            src={handShake}
+            src={career}
             alt="customer"
-            className="object-cover bg-center "
+            className="object-cover bg-center w-full"
           />
         </motion.div>
         <motion.div

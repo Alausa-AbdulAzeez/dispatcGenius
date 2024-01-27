@@ -116,15 +116,15 @@ export const footerLinks = [
   {
     title: "Join us",
     links: [
-      { name: "Partnership", link: "/dispatch" },
-      { name: "Career", link: "/publishing" },
+      { name: "Partnership", link: "#partnership" },
+      { name: "Career", link: "#career" },
     ],
   },
 
   {
     title: "Get in touch",
     links: [
-      { name: "customer@nike.com", link: "mailto:customer@nike.com" },
+      { name: "spidgenius@gmail.com", link: "mailto:spidgenius@gmail.com" },
       { name: "+2348090987851", link: "https://wa.me/+2348090987851" },
     ],
   },

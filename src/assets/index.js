@@ -21,6 +21,7 @@ import McCEO from "./McCEO.jpg";
 import McCEOsm from "./McCEOsm.png";
 import roundCeo from "./roundCeo.png";
 import handShake from "./handShake.jpg";
+import career from "./career.jpg";
 import printing from "./printing.svg";
 import transport from "./transport.svg";
 import whiteBg from "./whiteBg.svg";
@@ -34,6 +35,7 @@ import logoMain from "./logoMain.png";
 export {
   bgBlue,
   logoMain,
+  career,
   whiteBg,
   sAim,
   sMission,

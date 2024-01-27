@@ -27,7 +27,7 @@ const Partner = () => {
         </div> */}
       </motion.div>
 
-      <div className="flex flex-row-reverse mt-[24px]">
+      <div className="flex flex-row-reverse mt-[24px] max-md:flex-col max-md:items-center">
         <motion.div
           className="  h-full flex-1 relative"
           variants={fadeIn("left", "tween", 0.2, 1)}
@@ -42,7 +42,7 @@ const Partner = () => {
           />
         </motion.div>
         <motion.div
-          className="flex flex-col flex-1 items-center  justify-center"
+          className="flex flex-col flex-1 items-center  justify-center max-md:w-[90%]"
           variants={fadeIn("right", "tween", 0.2, 1)}
           initial="hidden"
           whileInView={"show"}
@@ -53,6 +53,13 @@ const Partner = () => {
             </div>
           </div>
           <p className="mt-6 text-[20px] text-center w-[90%] max-md:w-full px-4">
+            We welcome partnerships with individuals and organizations to
+            mutually promote our services. Additionally, we provide
+            opportunities for collaboration with bike and bus owners for
+            logistics and travel services. We also invite printing presses to
+            join us in producing unique prints for mutual benefit.
+          </p>
+          {/* <p className="mt-6 text-[20px] text-center w-[90%] max-md:w-full px-4">
             Join us in redefining the landscape of dispatch, travel, and
             publishing. At SpidGenius, we don't just meet expectations; we
             exceed them. Let's embark on a journey together – where every
@@ -60,7 +67,7 @@ const Partner = () => {
             commitment to excellence. Explore the possibilities with us as we
             navigate the roads, transcend boundaries, and bring your ideas to
             fruition.
-          </p>
+          </p> */}
           <Link to={"https://wa.me/+2348090987851"} target="_blank">
             <button className="bg-main-blue mt-[20px]  px-[20px] max-md:px-[14px] max-md:py-[7px] py-[14px] border border-transparent text-white rounded-md  cursor-pointer hover:bg-dark-blue hover:text-white hover:border-white transition-all duration-[3000] ease-in-out">
               Register here

@@ -44,6 +44,7 @@ const Navbar = ({ isVisible, pageType }) => {
           })}
           {sectionLinks?.map((sectionLink) => (
             <a
+              key={sectionLink?.href}
               href={
                 pageType === "mainPage"
                   ? sectionLink?.href

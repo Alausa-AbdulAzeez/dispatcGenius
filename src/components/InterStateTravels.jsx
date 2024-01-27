@@ -11,7 +11,7 @@ const InterStateTravels = () => {
       initial="hidden"
       whileInView={"show"}
     >
-      <div className="font-bold text-[40px] max-sm:text-[30px] text-light-blue">
+      <div className="font-bold text-[40px] max-sm:text-[30px] text-[#1649EB]">
         Unleash the Journey
       </div>
 

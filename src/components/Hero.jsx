@@ -6,7 +6,9 @@ import {
   designerDude,
   logisticsDude,
   printBlue,
+  printing,
   spidgeniusremovebg,
+  transport,
   travelingDude,
 } from "../assets/index";
 import HeroText from "./HeroText";
@@ -49,15 +51,15 @@ const Hero = () => {
   }, []);
 
   // USE EFFECT TO SET ALTERNATE BACKGROUNDS
-  // useEffect(() => {
-  //   const timer = setInterval(() => {
-  //     setActiveIndex((prevIndex) => (prevIndex + 1) % 3);
-  //   }, 5000);
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setActiveIndex((prevIndex) => (prevIndex + 1) % 3);
+    }, 5000);
 
-  //   return () => {
-  //     clearInterval(timer);
-  //   };
-  // }, []);
+    return () => {
+      clearInterval(timer);
+    };
+  }, []);
 
   return (
     <div
@@ -71,22 +73,26 @@ const Hero = () => {
         }`}
       >
         <div className="bg-white w-full h-full absolute top-0 left-0 overflow-hidden">
-          <img src={bgLg} alt="bg" className="h-[100%] w-[100%] object-cover" />
+          <img
+            src={printing}
+            alt="printing press"
+            className="h-[100%] w-[100%] object-cover"
+          />
         </div>
-        <div className=" w-[620px] h-[700px] absolute bottom-0 left-[40%] overflow-hidden bg-white rounded-[20px] p-[20px]">
+        {/* <div className=" w-[620px] h-[700px] absolute bottom-0 left-[40%] overflow-hidden bg-white rounded-[20px] p-[20px]">
           <img
             src={designerDude}
             alt="bg"
             className="h-[80%] w-[80%] object-cover absolute bottom-0 right-0 rounded-[20px]"
           />
-        </div>
+        </div> */}
         <PublishingHeroText />
         <div className="flex-1 h-full flex items-center justify-center max-sm:hidden">
-          <img
+          {/* <img
             src={printBlue}
             alt="delivery-boy-image"
             className="object-fill h-[460px] w-[370px]"
-          />
+          /> */}
         </div>
       </div>
       <div
@@ -119,23 +125,26 @@ const Hero = () => {
         }`}
       >
         <div className="bg-white w-full h-full absolute top-0 left-0 overflow-hidden">
-          <img src={bgLg} alt="bg" className="h-[100%] w-[100%] object-cover" />
+          <img
+            src={transport}
+            alt="transport"
+            className="h-[100%] w-[100%] object-cover"
+          />
         </div>
-        <div className=" w-[380px] h-[540px] absolute bottom-0 left-[40%] overflow-hidden bg-white rounded-[20px] p-[20px]">
+        {/* <div className=" w-[380px] h-[540px] absolute bottom-0 left-[40%] overflow-hidden bg-white rounded-[20px] p-[20px]">
           <img
             src={travelingDude}
             alt="bg"
             className="h-[80%] w-[80%] object-cover absolute bottom-0 right-0"
           />
-        </div>
+        </div> */}
         <InterStateTravels />
         <div className="flex-1 h-full flex items-center justify-center max-sm:hidden">
-          <img
+          {/* <img
             src={TravelBlue}
-            // src={Travel2}
             alt="delivery-boy-image"
             className="object-fill h-[460px] w-[370px]"
-          />
+          /> */}
         </div>
       </div>
     </div>

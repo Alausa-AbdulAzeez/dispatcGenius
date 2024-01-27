@@ -9,9 +9,9 @@ const HeroText = () => {
       variants={fadeIn("right", "tween", 0.2, 1)}
       initial="hidden"
       whileInView={"show"}
-      className="flex-1 h-full justify-center flex flex-col pl-[64px] text-textGray z-[2]  max-sm:px-[20px]"
+      className="flex-1 h-full justify-center  flex flex-col pl-[64px] text-textGray z-[2]  max-sm:px-[20px]"
     >
-      <div className="font-bold text-[40px] text-text max-md:text-[30px] ">
+      <div className="font-bold text-[40px] text-text max-md:text-[30px] bg-white w-fit text-nowrap ">
         On-Demand Dispatch
       </div>
       <div className="font-bold text-[32px] no-underline text-[#1649EB]  max-md:text-[25px]">

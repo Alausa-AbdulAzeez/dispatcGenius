@@ -23,10 +23,14 @@ import roundCeo from "./roundCeo.png";
 import handShake from "./handShake.jpg";
 import printing from "./printing.svg";
 import transport from "./transport.svg";
+import whiteBg from "./whiteBg.svg";
 import spidgeniusweb from "./spidgeniusweb.png";
+import logoMain from "./logoMain.png";
 
 export {
   bgBlue,
+  logoMain,
+  whiteBg,
   transport,
   spidgeniusweb,
   printing,

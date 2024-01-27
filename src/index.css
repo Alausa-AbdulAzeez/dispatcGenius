@@ -83,3 +83,23 @@ blockquote:after {
   display: block;
   width: 100%;
 }
+
+/* Define the scrollbar track and thumb styles */
+.nav::-webkit-scrollbar {
+  height: 4px; /* Set the width of the scrollbar */
+}
+
+.nav::-webkit-scrollbar-track {
+  background: #cccccc; /* Track color */
+  border-radius: 1px;
+}
+
+.nav::-webkit-scrollbar-thumb {
+  background: #999999; /* Thumb color */
+  border-radius: 1px; /* Adjust the border radius to round the thumb */
+}
+
+/* Change thumb color on hover */
+.nav::-webkit-scrollbar-thumb:hover {
+  background: #818181;
+}

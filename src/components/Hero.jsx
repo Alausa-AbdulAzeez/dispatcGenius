@@ -10,6 +10,7 @@ import {
   spidgeniusremovebg,
   transport,
   travelingDude,
+  whiteBg,
 } from "../assets/index";
 import HeroText from "./HeroText";
 import PublishingHeroText from "./PublishingHeroText";
@@ -63,7 +64,7 @@ const Hero = () => {
 
   return (
     <div
-      className={`w-full h-full relative transition-opacity duration-[3000] ease-in-out`}
+      className={`w-full h-full min-h-[500px] relative transition-opacity duration-[3000] ease-in-out`}
     >
       {isVisible && <BackToTop scrollToTop={scrollToTop} />}
       <Navbar isVisible={isVisible} pageType={"mainPage"} />
@@ -76,24 +77,17 @@ const Hero = () => {
           <img
             src={printing}
             alt="printing press"
-            className="h-[100%] w-[100%] object-cover"
+            className="h-[100%] w-[100%] object-cover max-md:hidden"
           />
-        </div>
-        {/* <div className=" w-[620px] h-[700px] absolute bottom-0 left-[40%] overflow-hidden bg-white rounded-[20px] p-[20px]">
           <img
-            src={designerDude}
-            alt="bg"
-            className="h-[80%] w-[80%] object-cover absolute bottom-0 right-0 rounded-[20px]"
+            src={whiteBg}
+            alt="printing press"
+            className="h-[100%] w-[100%] object-cover hidden max-md:block"
           />
-        </div> */}
-        <PublishingHeroText />
-        <div className="flex-1 h-full flex items-center justify-center max-sm:hidden">
-          {/* <img
-            src={printBlue}
-            alt="delivery-boy-image"
-            className="object-fill h-[460px] w-[370px]"
-          /> */}
         </div>
+
+        <PublishingHeroText />
+        <div className="flex-1 h-full flex items-center justify-center max-sm:hidden"></div>
       </div>
       <div
         className={` w-full h-full absolute flex items-center ${
@@ -101,23 +95,20 @@ const Hero = () => {
         }`}
       >
         <div className="bg-white w-full h-full absolute top-0 left-0 overflow-hidden">
-          <img src={bgLg} alt="bg" className="h-[100%] w-[100%] object-cover" />
-        </div>
-        {/* <div className="w-[338px] h-[480px] absolute bottom-[10%] right-[20%] flex items-center justify-center">
           <img
-            src={logisticsDude}
+            src={bgLg}
             alt="bg"
-            className="h-[100%] w-[100%] rounded-[20px] object-cover"
+            className="h-[100%] w-[100%] object-cover max-md:hidden object-left"
           />
-        </div> */}
-        <HeroText />
-        <div className="flex-1 h-full flex items-center justify-center ">
-          {/* <img
-            src={DeliveryBlue}
-            alt="delivery-boy-image"
-            className="object-fill h-[460px] w-[370px]"
-          /> */}
+          <img
+            src={whiteBg}
+            alt="printing press"
+            className="h-[100%] w-[100%] object-cover hidden max-md:block"
+          />
         </div>
+
+        <HeroText />
+        <div className="flex-1 h-full flex items-center justify-center max-sm:hidden"></div>
       </div>
       <div
         className={` w-full h-full absolute flex items-center ${
@@ -128,24 +119,17 @@ const Hero = () => {
           <img
             src={transport}
             alt="transport"
-            className="h-[100%] w-[100%] object-cover"
+            className="h-[100%] w-[100%] object-cover max-md:hidden"
           />
-        </div>
-        {/* <div className=" w-[380px] h-[540px] absolute bottom-0 left-[40%] overflow-hidden bg-white rounded-[20px] p-[20px]">
           <img
-            src={travelingDude}
-            alt="bg"
-            className="h-[80%] w-[80%] object-cover absolute bottom-0 right-0"
+            src={whiteBg}
+            alt="printing press"
+            className="h-[100%] w-[100%] object-cover hidden max-md:block"
           />
-        </div> */}
-        <InterStateTravels />
-        <div className="flex-1 h-full flex items-center justify-center max-sm:hidden">
-          {/* <img
-            src={TravelBlue}
-            alt="delivery-boy-image"
-            className="object-fill h-[460px] w-[370px]"
-          /> */}
         </div>
+
+        <InterStateTravels />
+        <div className="flex-1 h-full flex items-center justify-center max-sm:hidden"></div>
       </div>
     </div>
   );

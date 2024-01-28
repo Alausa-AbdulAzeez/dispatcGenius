@@ -29,11 +29,17 @@ import sAim from "./sAim.svg";
 import sMission from "./sMission.svg";
 import sVision from "./sVision.svg";
 import sObjective from "./sObjective.svg";
+import dispatchSvg from "./dispatchSvg.svg";
+import printSvg from "./printSvg.svg";
+import transportSvg from "./transportSvg.svg";
 import spidgeniusweb from "./spidgeniusweb.png";
 import logoMain from "./logoMain.png";
 
 export {
   bgBlue,
+  dispatchSvg,
+  printSvg,
+  transportSvg,
   logoMain,
   career,
   whiteBg,

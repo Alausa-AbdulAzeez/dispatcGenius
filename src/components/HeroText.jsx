@@ -11,14 +11,14 @@ const HeroText = () => {
       whileInView={"show"}
       className="flex-1 h-full justify-center  flex flex-col pl-[64px] text-textGray z-[2]  max-sm:px-[20px]"
     >
-      <div className="font-bold text-[40px] text-text max-md:text-[30px] bg-white w-fit text-nowrap ">
+      <div className="font-bold text-[40px] text-text max-md:text-white max-md:text-[30px]  w-fit text-nowrap ">
         On-Demand Dispatch
       </div>
       <div className="font-bold text-[32px] no-underline text-[#1649EB]  max-md:text-[25px]">
         Anytime,{" "}
-        <span className="italic  underline    text-light-blue">Anywhere</span>
+        <span className="italic  underline  text-light-blue">Anywhere</span>
       </div>
-      <div className="text-[20px] max-md:text-[14px] text-textGray w-[80%] bg-white max-w-fit">
+      <div className="text-[20px] max-md:text-[14px] max-md:text-white text-textGray w-[80%]  max-w-fit">
         Ensuring prompt and secure delivery to your destination with swift
         dispatch services.
       </div>

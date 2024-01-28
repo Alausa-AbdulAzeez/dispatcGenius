@@ -1,5 +1,5 @@
 import React from "react";
-import { TravelBlue, transport, whiteBg } from "../assets/index";
+import { TravelBlue, transport, transportSvg, whiteBg } from "../assets/index";
 import { motion } from "framer-motion";
 import { navVariants, staggerContainer } from "../utils/motion";
 import InterStateTravels from "../components/InterStateTravels";
@@ -28,8 +28,10 @@ const Interstate = ({ isVisible, scrollToTop }) => {
               alt="bg"
               className="h-[100%] w-[100%] object-cover max-md:hidden"
             />
+            <div className="absolute w-full h-full bg-[#00000090] top-0 left-0 hidden max-md:block"></div>
+
             <img
-              src={whiteBg}
+              src={transportSvg}
               alt="printing press"
               className="h-[100%] w-[100%] object-cover hidden max-md:block"
             />

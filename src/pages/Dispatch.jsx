@@ -3,6 +3,7 @@ import {
   DeliveryBlue,
   TravelBlue,
   bgLg,
+  dispatchSvg,
   printBlue,
   spidgeniusremovebg,
   whiteBg,
@@ -38,8 +39,10 @@ const Dispatch = ({ isVisible, scrollToTop }) => {
               alt="bg"
               className="h-[100%] w-[100%] object-cover max-md:hidden"
             />
+            <div className="absolute w-full h-full bg-[#00000090] top-0 left-0 hidden max-md:block"></div>
+
             <img
-              src={whiteBg}
+              src={dispatchSvg}
               alt="printing press"
               className="h-[100%] w-[100%] object-cover hidden max-md:block"
             />

@@ -4,11 +4,14 @@ import {
   TravelBlue,
   bgLg,
   designerDude,
+  dispatchSvg,
   logisticsDude,
   printBlue,
+  printSvg,
   printing,
   spidgeniusremovebg,
   transport,
+  transportSvg,
   travelingDude,
   whiteBg,
 } from "../assets/index";
@@ -73,14 +76,16 @@ const Hero = () => {
           activeIndex === 1 ? "opacity-[1]" : "opacity-[0]"
         }`}
       >
-        <div className="bg-white w-full h-full absolute top-0 left-0 overflow-hidden">
+        <div className="bg-white w-full h-full absolute top-0 left-0 overflow-hidden ">
           <img
             src={printing}
             alt="printing press"
             className="h-[100%] w-[100%] object-cover max-md:hidden"
           />
+          <div className="absolute w-full h-full bg-[#00000090] top-0 left-0 hidden max-md:block"></div>
+
           <img
-            src={whiteBg}
+            src={printSvg}
             alt="printing press"
             className="h-[100%] w-[100%] object-cover hidden max-md:block"
           />
@@ -94,16 +99,19 @@ const Hero = () => {
           activeIndex === 0 ? "opacity-[1]" : "opacity-[0]"
         }`}
       >
-        <div className="bg-white w-full h-full absolute top-0 left-0 overflow-hidden">
+        <div className="bg-white w-full h-full absolute top-0 left-0 overflow-hidden ">
           <img
             src={bgLg}
             alt="bg"
             className="h-[100%] w-[100%] object-cover max-md:hidden object-left"
           />
+          <div className="absolute w-full h-full bg-[#00000090] top-0 left-0 hidden max-md:block"></div>
+
           <img
-            src={whiteBg}
+            // src={whiteBg}
+            src={dispatchSvg}
             alt="printing press"
-            className="h-[100%] w-[100%] object-cover hidden max-md:block"
+            className="h-[100%] w-[100%] object-cover hidden max-md:block object-top"
           />
         </div>
 
@@ -115,14 +123,16 @@ const Hero = () => {
           activeIndex === 2 ? "opacity-[1]" : "opacity-[0]"
         }`}
       >
-        <div className="bg-white w-full h-full absolute top-0 left-0 overflow-hidden">
+        <div className="bg-white w-full h-full absolute top-0 left-0 overflow-hidden ">
           <img
             src={transport}
             alt="transport"
             className="h-[100%] w-[100%] object-cover max-md:hidden"
           />
+          <div className="absolute w-full h-full bg-[#00000090] top-0 left-0 hidden max-md:block"></div>
+
           <img
-            src={whiteBg}
+            src={transportSvg}
             alt="printing press"
             className="h-[100%] w-[100%] object-cover hidden max-md:block"
           />

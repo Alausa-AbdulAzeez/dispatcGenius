@@ -11,7 +11,7 @@ import Careers from "../components/Careers";
 const Home = () => {
   return (
     <div className="overflow-hidden">
-      <div className="w-[100vw] h-[100vh]">
+      <div className="w-[100vw] h-[100vh] max-h-[740px]">
         <Hero />
       </div>
 

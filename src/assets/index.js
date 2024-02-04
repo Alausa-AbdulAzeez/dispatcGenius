@@ -34,9 +34,13 @@ import printSvg from "./printSvg.jpg";
 import transportSvg from "./transportSvg.jpg";
 import spidgeniusweb from "./spidgeniusweb.png";
 import logoMain from "./logoMain.png";
+import dispatch from "./dispatch.png";
+import dispatchMan from "./dispatchMan.png";
 
 export {
   bgBlue,
+  dispatch,
+  dispatchMan,
   dispatchSvg,
   printSvg,
   transportSvg,

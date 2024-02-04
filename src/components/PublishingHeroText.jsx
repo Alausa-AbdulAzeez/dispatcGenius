@@ -14,9 +14,9 @@ const PublishingHeroText = () => {
       <div className="font-bold text-[40px] max-md:text-[30px] max-md:text-white">
         Publishing,
       </div>
-      <div className="font-bold text-[32px] bg-white no-underline text-[#1649EB]   max-md:text-[25px] w-fit">
+      <div className="font-bold text-[32px]  no-underline text-[#1649EB]   max-md:text-[25px] w-fit">
         General Printing &{" "}
-        <span className="italic    underline text-light-blue">
+        <span className="italic    underline text-[#3b69ff]">
           Book Publishing
         </span>
       </div>

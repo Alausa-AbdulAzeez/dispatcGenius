@@ -4,6 +4,8 @@ import {
   TravelBlue,
   bgLg,
   designerDude,
+  dispatch,
+  dispatchMan,
   dispatchSvg,
   logisticsDude,
   printBlue,
@@ -67,7 +69,7 @@ const Hero = () => {
 
   return (
     <div
-      className={`w-full h-full min-h-[500px] relative transition-opacity duration-[3000] ease-in-out`}
+      className={`w-full h-full min-h-[500px]  relative transition-opacity duration-[3000] ease-in-out`}
     >
       {isVisible && <BackToTop scrollToTop={scrollToTop} />}
       <Navbar isVisible={isVisible} pageType={"mainPage"} />
@@ -108,10 +110,19 @@ const Hero = () => {
           <div className="absolute w-full h-full bg-[#00000090] top-0 left-0 hidden max-md:block"></div>
 
           <img
-            // src={whiteBg}
             src={dispatchSvg}
             alt="printing press"
             className="h-[100%] w-[100%] object-cover hidden max-md:block object-top"
+          />
+          {/* <img
+            src={dispatch}
+            alt="printing press"
+            className="h-[527px] w-[374px] object-cover absolute bottom-0 right-[20%]"
+          /> */}
+          <img
+            src={dispatchMan}
+            alt="printing press"
+            className="h-[727px] w-[574px]  object-contain absolute bottom-[-100px] right-[15%] max-sm:right-[-100px] max-md:right-[-80px] max-lg:right-[0px] max-sm:h-[527px] max-sm:w-[374px] "
           />
         </div>
 

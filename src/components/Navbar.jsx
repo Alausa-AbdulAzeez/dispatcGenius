@@ -20,7 +20,7 @@ const Navbar = ({ isVisible, pageType }) => {
         <img
           src={logoMain}
           alt="Logo"
-          className="w-[140px] h-[66px] max-md:w-[106px] max-md:h-[50px]"
+          className="w-[150px] h-[100px] max-md:w-[120px] max-md:h-[90px]"
         />
       </Link>
       <div className="flex flex-1 max-w-[800px] max-md:flex-none">

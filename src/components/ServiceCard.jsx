@@ -11,7 +11,7 @@ const ServiceCard = ({ imgURL, label, subtext, index, link }) => {
     <motion.div
       variants={fadeIn("right", "spring", index * 0.5, 0.75)}
       onClick={() => navigate(`${link}`)}
-      className={`flex-1 sm:w-[350px] sm:min-w-[350px] w-full rounded-[20px] shadow-3xl px-10 py-16 max-md:px-[16px] max-md:min-w-[260px]`}
+      className={`flex-1 sm:w-[350px] sm:min-w-[350px] w-full rounded-[20px] shadow-3xl px-10 py-10 max-md:px-[16px] max-md:min-w-[260px] maxWidth`}
     >
       <div className=" w-full h-[200px] overflow-hidden ">
         <img

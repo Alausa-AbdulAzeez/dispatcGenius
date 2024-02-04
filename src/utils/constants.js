@@ -49,7 +49,11 @@ export const services = [
   {
     imgURL: printBlue,
     label: "Printing and Publishing",
-    subtext: ["Graphics design", "General printing"],
+    subtext: [
+      "Graphics design",
+      "General printing",
+      "Book Publishing with ISBN",
+    ],
     link: "/publishing",
   },
   {
@@ -124,8 +128,22 @@ export const footerLinks = [
   {
     title: "Get in touch",
     links: [
-      { name: "spidgenius@gmail.com", link: "mailto:spidgenius@gmail.com" },
-      { name: "+2348090987851", link: "https://wa.me/+2348090987851" },
+      {
+        name: "Email: spidgenius@gmail.com",
+        link: "mailto:spidgenius@gmail.com",
+      },
+      {
+        name: "Whatsapp: +234 809 098 7851",
+        link: "https://wa.me/+2348090987851",
+      },
+      {
+        name: "Contacts: +234 816 168 8631, +234 809 098 7851",
+        link: "",
+      },
+      {
+        name: "Customer care: +234 807 845 5697 ",
+        link: "https://wa.me/+2348078455697",
+      },
     ],
   },
 ];
@@ -142,6 +160,14 @@ export const logisticsFeatures = [
   "⁠Fast and Accurate service delivery",
   "⁠Reliable and effective communication",
 ];
+export const partnershipTypes = [
+  "Partnership with companies for consistent delivery services",
+  "Partnership with Printing press companies",
+  "Partnership with travels and tours companies",
+  "⁠Partnership with Personal Bike/Bicycle owners",
+  "⁠Partnership with personal Car owners",
+  "⁠Partnership with Personal bus owners",
+];
 
 export const pressFeatures = [
   "Creative graphics that looks real",
@@ -149,6 +175,7 @@ export const pressFeatures = [
   "⁠We handle printing from the scratch and deliver finished work to you at your door",
   "We print all kinds of corporate sovenirs for organizations",
   "We manage a consistent graphics for companies’ social media",
+  "Book planning and publishing with ISBN",
 ];
 
 export const transportFeatures = [

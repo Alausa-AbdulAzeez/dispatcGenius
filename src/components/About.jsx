@@ -18,7 +18,7 @@ const About = () => {
         className={` mx-auto flex flex-col items-center`}
       >
         <TypingText
-          title="| About Spidgenius"
+          title="| About SpidGenius"
           textStyles="text-center text-[20px]"
         />
         <div className="flex mt-[24px] max-md:flex-col">

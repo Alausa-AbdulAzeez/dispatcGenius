@@ -1,9 +1,13 @@
 import React from "react";
 import { handShake, roundCeo, spidgenius2 } from "../assets";
 import { motion } from "framer-motion";
-import { fadeIn, staggerContainer } from "../utils/motion";
+import { fadeIn, navVariants, staggerContainer } from "../utils/motion";
 import { TypingText } from "./CustomTexts";
 import { Link } from "react-router-dom";
+import { logisticsFeatures, partnershipTypes } from "../utils/constants";
+import StartSteps from "./StartSteps";
+import { arrowRightWhite } from "../assets/icons";
+import Button from "./Button";
 
 const Partner = () => {
   return (
@@ -59,22 +63,54 @@ const Partner = () => {
             logistics and travel services. We also invite printing presses to
             join us in producing unique prints for mutual benefit.
           </p>
-          {/* <p className="mt-6 text-[20px] text-center w-[90%] max-md:w-full px-4">
-            Join us in redefining the landscape of dispatch, travel, and
-            publishing. At SpidGenius, we don't just meet expectations; we
-            exceed them. Let's embark on a journey together – where every
-            dispatch, every trip, and every print is a testament to our
-            commitment to excellence. Explore the possibilities with us as we
-            navigate the roads, transcend boundaries, and bring your ideas to
-            fruition.
-          </p> */}
-          <Link to={"https://wa.me/+2348090987851"} target="_blank">
+          {/* <Link to={"https://wa.me/+2348090987851"} target="_blank">
             <button className="bg-main-blue mt-[20px]  px-[20px] max-md:px-[14px] max-md:py-[7px] py-[14px] border border-transparent text-white rounded-md  cursor-pointer hover:bg-dark-blue hover:text-white hover:border-white transition-all duration-[3000] ease-in-out">
               Register here
             </button>
-          </Link>
+          </Link> */}
         </motion.div>
       </div>
+      <motion.div
+        variants={staggerContainer}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: false, amount: 0.25 }}
+        className={` mx-auto flex flex-col items-center `}
+      >
+        <motion.div
+          className="mt-[8px] font-normal text-[24px] text-center w-[70%] max-md:w-[90%] mb-[40px] max-lg:w-[80%] max-md:text-[16px]"
+          variants={navVariants}
+          initial="hidden"
+          whileInView={"show"}
+        >
+          <h1 className="text-[50px] mb-[30px] max-md:text-[35px]">
+            We are open for partnership from individuals and businesses such as
+          </h1>
+          <div className="flex flex-col gap-[10px] mt-[30px] max-md:gap-[15px]">
+            {partnershipTypes?.map((logisticsFeature, index) => {
+              return (
+                <StartSteps
+                  key={logisticsFeature}
+                  number={index + 1}
+                  text={logisticsFeature}
+                />
+              );
+            })}
+          </div>
+        </motion.div>
+        <Link
+          to={"https://wa.me/+2348090987851"}
+          target="_blank"
+          className="mb-[50px]"
+        >
+          <Button
+            label="Make enquiries"
+            iconUrl={arrowRightWhite}
+            backgroundColor="bg-[#1649EB]"
+            textColor="text-white"
+          />
+        </Link>
+      </motion.div>
     </div>
   );
 };

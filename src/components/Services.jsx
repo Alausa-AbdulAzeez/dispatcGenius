@@ -17,7 +17,7 @@ const Services = () => {
       >
         <TypingText title="| Services" textStyles="text-center text-[20px]" />
         <div className="mt-[8px] font-normal text-[40px] text-center w-[70%] max-md:w-[80%] max-md:text-[20px]">
-          Navigate Boundless Possibilities with Spidgenius
+          Navigate Boundless Possibilities with SpidGenius
         </div>
       </motion.div>
 

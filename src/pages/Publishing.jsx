@@ -55,7 +55,7 @@ const Publishing = ({ isVisible, scrollToTop }) => {
           className={` mx-auto flex flex-col items-center`}
         >
           <TypingText
-            title="| Publishing (Graphics and General Printing)"
+            title="| Publishing, General Printing &  Book Publishing"
             textStyles="text-center text-[24px] max-md:text-[14px] visible max-md:hidden"
           />
 

@@ -19,7 +19,11 @@ const Footer = () => {
           </a>
           <p className="mt-6 text-base leading-7 font-montserrat text-white-400 sm:max-w-sm">
             Join us in redefining the landscape of dispatch, travel, and
-            publishing. Let Spidgenius be your companion.
+            publishing. Let SpidGenius be your companion.
+          </p>
+          <p className="mt-6 text-base leading-7 font-montserrat text-white-400 sm:max-w-sm">
+            <span className="font-extrabold">Address:</span> Join us in 15,
+            Raimi Street, Cassidy, Lagos State
           </p>
           <div className="flex items-center gap-5 mt-8">
             {socialMedia?.map((icon, index) => {

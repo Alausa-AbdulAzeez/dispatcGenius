@@ -21,7 +21,7 @@ const OurCeo = () => {
       </motion.div>
 
       <div className="flex mt-[24px] max-md:flex-col">
-        <motion.div
+        {/* <motion.div
           className="  h-full flex-1 relative"
           variants={fadeIn("right", "tween", 0.2, 1)}
           initial="hidden"
@@ -33,9 +33,9 @@ const OurCeo = () => {
             alt="customer"
             className="object-cover bg-center "
           />
-        </motion.div>
+        </motion.div> */}
         <motion.div
-          className="flex flex-col flex-1 items-center gap-[60px] justify-center max-md:mb-[30px]"
+          className="flex flex-col flex-1 items-center gap-[50px] mb-[30px] justify-center max-md:mb-[30px]"
           variants={fadeIn("left", "tween", 0.2, 1)}
           initial="hidden"
           whileInView={"show"}
@@ -45,10 +45,10 @@ const OurCeo = () => {
               Olutayo Michael M.
             </div>
             <div className=" font-semibold italic text-[20px] text-center w-[100%]  max-md:text-[30px] mb-[40px] max-md:mb-[0px]">
-              Associate Chartered Accountant CEO, SpidGenius
+              ACA CEO, SpidGenius
             </div>
           </div>
-          <blockquote className="mt-6 text-[20px] text-center w-[90%] max-md:w-full px-4">
+          <blockquote className="mt-0 max-md:mt-6 text-[20px] text-center w-[70%] max-md:w-full px-4">
             Join us in redefining the landscape of dispatch, travel, and
             publishing. At SpidGenius, we don't just meet expectations; we
             exceed them. Let's embark on a journey together – where every

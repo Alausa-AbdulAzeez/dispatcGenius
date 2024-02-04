@@ -17,7 +17,7 @@ import Button from "./Button";
 const Partner = () => {
   return (
     <div
-      className={`flex items-center flex-col justify-center min-h-[100vh] h-auto pt-[20px]  max-md:pb-10 bg-[url('${handShake}')] bg-center bg-cover bg-no-repeat relative`}
+      className={`flex items-center flex-col justify-center min-h-[100vh] h-auto pt-[20px] max-md:pb-10 handShakeBg bg-center bg-cover bg-no-repeat relative`}
       // className={`flex items-center flex-col justify-center min-h-[100vh] h-auto pt-[20px]  max-md:pb-10 bg-[url('/src/assets/handShake.jpg')] bg-center bg-cover bg-no-repeat relative`}
       // className="flex items-center flex-col justify-center min-h-[100vh] h-auto pt-[20px]  max-md:pb-10 bg-bgHandshake bg-center bg-cover bg-no-repeat relative"
       id="partnership"

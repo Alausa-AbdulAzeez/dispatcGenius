@@ -106,3 +106,7 @@ blockquote:after {
 .maxWidth {
   max-width: 500px !important;
 }
+
+.handShakeBg {
+  background-image: url("./assets/handShake.jpg") !important;
+}

@@ -90,7 +90,7 @@ export const aimsAndObjectives = [
     imgURL: sVision,
     label: "Vision",
     subtext: [
-      "To become a top leader in the integration of production and distribution with quality services that stands out. While making navigation within nations and states easy globally.",
+      "To become a global leading brand in the integration of production and distribution with quality services that stand out. While making navigation within nations and states easy globally.",
     ],
     link: "",
   },

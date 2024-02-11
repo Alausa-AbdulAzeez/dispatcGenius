@@ -35,20 +35,12 @@ const OurCeo = () => {
           />
         </motion.div> */}
         <motion.div
-          className="flex flex-col flex-1 items-center gap-[50px] mb-[30px] justify-center max-md:mb-[30px]"
+          className="flex flex-col flex-1 items-center gap-[0px] mb-[30px] justify-center max-md:mb-[30px]"
           variants={fadeIn("left", "tween", 0.2, 1)}
           initial="hidden"
           whileInView={"show"}
         >
-          <div className="flex flex-col">
-            <div className="mt-[8px] font-normal text-[40px] text-center w-[100%] max-md:text-[30px] text-main-blue">
-              Olutayo Michael M.
-            </div>
-            <div className=" font-semibold italic text-[20px] text-center w-[100%]  max-md:text-[30px] mb-[40px] max-md:mb-[0px]">
-              ACA CEO, SpidGenius
-            </div>
-          </div>
-          <blockquote className="mt-0 max-md:mt-6 text-[20px] text-center w-[70%] max-md:w-full px-4">
+          <blockquote className="mt-6 text-[20px] text-center w-[60%] max-md:w-full px-4 ">
             Join us in redefining the landscape of dispatch, travel, and
             publishing. At SpidGenius, we don't just meet expectations; we
             exceed them. Let's embark on a journey together – where every
@@ -57,6 +49,14 @@ const OurCeo = () => {
             navigate the roads, transcend boundaries, and bring your ideas to
             fruition.
           </blockquote>
+          <div className="flex flex-col">
+            <div className="mt-[30px] font-normal text-[40px] text-center w-[100%] max-md:text-[30px] text-main-blue">
+              Olutayo Michael M, ACA
+            </div>
+            <div className=" font-semibold italic text-[30px] text-center w-[100%]  max-md:text-[30px] mb-[40px] max-md:mb-[0px] mt-1">
+              CEO, SpidGenius
+            </div>
+          </div>
         </motion.div>
       </div>
     </div>

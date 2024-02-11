@@ -38,7 +38,7 @@
 }
 
 blockquote {
-  font-size: 1.5em;
+  font-size: 1em;
   line-height: 1.5em;
 }
 
@@ -55,16 +55,16 @@ blockquote:after {
   display: inline-block;
   vertical-align: bottom;
   color: #1649eb;
-  font-size: 10em;
+  font-size: 6em;
   top: 0.1em;
   position: relative;
 }
 blockquote:before {
-  margin-right: 20px;
+  margin-right: 10px;
 }
 blockquote:after {
-  top: 0.45em;
-  margin-left: 20px;
+  top: 0.35em;
+  margin-left: 10px;
 }
 .swiper {
   width: 100%;
